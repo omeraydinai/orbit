@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORBIT — Your Entry Point to Greece | Golden Visa &amp; Real Estate Advisory</title>
+<meta name="description" content="ORBIT is a boutique investment migration and real estate advisory connecting international investors with strategic real estate and Golden Visa opportunities in Greece.">
+<meta name="keywords" content="Greece Golden Visa, Greece real estate investment, Athens property investment, Greek Golden Visa, Greece residency by investment">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ORBIT — Your Entry Point to Greece">
+<meta property="og:description" content="Strategic real estate investment and Golden Visa advisory for international investors.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230B1821'/%3E%3Cellipse cx='32' cy='32' rx='26' ry='11' fill='none' stroke='%23B7A276' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23F4F1E9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1821;
+    --navy-80: rgba(11,24,33,0.8);
+    --navy-40: rgba(11,24,33,0.4);
+    --aegean:#28677A;
+    --ivory:#F4F1E9;
+    --champagne:#B7A276;
+    --stone:#9B9A91;
+    --ivory-rgb: 244,241,233;
+    --navy-rgb: 11,24,33;
+
+    --surface-0:#0B1821;
+    --surface-1:#0F1F28;
+    --surface-2:#152B37;
+    --surface-3:#1D3A47;
+    --border-soft: rgba(244,241,233,0.12);
+    --border-strong: rgba(244,241,233,0.26);
+    --text-hi: var(--ivory);
+    --text-lo: rgba(244,241,233,0.68);
+    --text-faint: rgba(244,241,233,0.46);
+
+    --space-3xs: 4px;
+    --space-2xs: 8px;
+    --space-xs: 12px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 40px;
+    --space-xl: 64px;
+    --space-2xl: 96px;
+    --space-3xl: 148px;
+
+    --ease: cubic-bezier(0.16,1,0.3,1);
+    --dur-s: 420ms;
+    --dur-m: 640ms;
+    --dur-l: 900ms;
+
+    --radius-s: 2px;
+    --radius-m: 4px;
+    --radius-l: 8px;
+
+    --shadow-1: 0 1px 2px rgba(0,0,0,0.3), 0 3px 10px rgba(0,0,0,0.28);
+    --shadow-2: 0 8px 22px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.3);
+    --shadow-3: 0 24px 56px rgba(0,0,0,0.55), 0 6px 18px rgba(0,0,0,0.4);
+    --glow-champagne: 0 0 0 1px rgba(183,162,118,0.22);
+
+    --maxw: 1320px;
+  }
+
+  *,*::before,*::after{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *,*::before,*::after{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+  body{
+    margin:0;
+    background: var(--surface-0);
+    color: var(--text-hi);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color: inherit; text-decoration:none; }
+  button{ font-family: inherit; cursor:pointer; }
+  ul{ margin:0; padding:0; list-style:none; }
+  h1,h2,h3,h4{ margin:0; font-family:'Cormorant Garamond', serif; font-weight:500; letter-spacing:-0.01em; }
+  p{ margin:0; }
+  input,select,textarea{ font-family:inherit; font-size: inherit; }
+
+  .noise{ position:relative; }
+  .noise::before{
+    content:"";
+    position:absolute; inset:0;
+    pointer-events:none;
+    opacity:0.035;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  .container{ max-width: var(--maxw); margin:0 auto; padding: 0 var(--space-lg); }
+  @media (max-width: 768px){ .container{ padding: 0 var(--space-md); } }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap: var(--space-xs);
+    font-family:'Inter',sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--aegean);
+  }
+  .eyebrow::before{ content:""; width: 22px; height:1px; background: var(--champagne); }
+
+  .reveal{ opacity:0; transform: translateY(28px); transition: opacity var(--dur-l) var(--ease), transform var(--dur-l) var(--ease); }
+  .reveal.is-visible{ opacity:1; transform: translateY(0); }
+  .reveal-scale{ opacity:0; transform: scale(0.96); transition: opacity var(--dur-l) var(--ease), transform var(--dur-l) var(--ease); }
+  .reveal-scale.is-visible{ opacity:1; transform: scale(1); }
+
+  .btn{
+    display:inline-flex; align-items:center; gap: var(--space-2xs);
+    padding: 15px 30px; border-radius: var(--radius-m);
+    font-size: 13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+    border: 1px solid transparent; white-space:nowrap;
+    transition: transform var(--dur-s) var(--ease), background-color var(--dur-s) var(--ease), color var(--dur-s) var(--ease), border-color var(--dur-s) var(--ease), box-shadow var(--dur-s) var(--ease);
+  }
+  .btn svg{ width:14px; height:14px; transition: transform var(--dur-s) var(--ease); }
+  .btn:hover svg{ transform: translateX(3px); }
+  .btn:active{ transform: scale(0.97); }
+  .btn:focus-visible{ outline: 2px solid var(--champagne); outline-offset:3px; }
+
+  .btn-primary{ background: var(--ivory); color: var(--navy); border-color: var(--ivory); }
+  .btn-primary:hover{ background:#fff; box-shadow: var(--shadow-2); }
+
+  .btn-ghost-dark{ background: transparent; color: var(--navy); border-color: rgba(11,24,33,0.28); }
+  .btn-ghost-dark:hover{ border-color: var(--navy); background: rgba(11,24,33,0.04); }
+
+  .btn-ghost-light{ background: transparent; color: var(--ivory); border-color: rgba(244,241,233,0.35); }
+  .btn-ghost-light:hover{ border-color: var(--ivory); background: rgba(244,241,233,0.08); }
+
+  .btn-champagne{ background: var(--champagne); color: var(--navy); border-color: var(--champagne); }
+  .btn-champagne:hover{ background:#c3b088; box-shadow: 0 10px 26px rgba(183,162,118,0.35); }
+
+  /* ===== HEADER ===== */
+  header{
+    position: fixed; top:0; left:0; right:0; z-index: 500;
+    padding: 26px 0;
+    transition: padding var(--dur-m) var(--ease), background-color var(--dur-m) var(--ease), backdrop-filter var(--dur-m) var(--ease), border-color var(--dur-m) var(--ease);
+    border-bottom: 1px solid transparent;
+  }
+  header.scrolled{
+    padding: 16px 0;
+    background: rgba(var(--navy-rgb), 0.86);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .header-inner{ display:flex; align-items:center; justify-content:space-between; gap: var(--space-lg); }
+  .logo{
+    font-family:'Cormorant Garamond', serif; font-size: 26px; font-weight:600; letter-spacing: 0.12em;
+    color: var(--ivory); transition: color var(--dur-m) var(--ease);
+  }
+  .logo span{ color: var(--champagne); }
+
+  nav.main-nav{ display:flex; align-items:center; gap: var(--space-lg); }
+  .nav-links{ display:flex; gap: var(--space-lg); }
+  .nav-links a{
+    font-size:13px; font-weight:500; letter-spacing:0.04em; color: rgba(244,241,233,0.86);
+    position:relative; padding: 4px 0; transition: color var(--dur-s) var(--ease);
+  }
+  header.scrolled .nav-links a{ color: rgba(244,241,233,0.74); }
+  .nav-links a::after{
+    content:""; position:absolute; left:0; bottom:-2px; width:0; height:1px; background: var(--champagne);
+    transition: width var(--dur-s) var(--ease);
+  }
+  .nav-links a:hover{ color: var(--champagne); }
+  header.scrolled .nav-links a:hover{ color: var(--champagne); }
+  .nav-links a:hover::after{ width:100%; }
+
+  .header-actions{ display:flex; align-items:center; gap: var(--space-md); }
+  .lang-toggle{
+    background:none; border:1px solid rgba(244,241,233,0.35); border-radius: var(--radius-l);
+    color: rgba(244,241,233,0.9); font-size:11px; font-weight:600; letter-spacing:0.06em;
+    padding: 6px 4px; display:flex; overflow:hidden; transition: border-color var(--dur-s) var(--ease);
+  }
+  header.scrolled .lang-toggle{ border-color: var(--border-strong); }
+  .lang-toggle span{ padding: 3px 9px; border-radius: var(--radius-m); transition: background-color var(--dur-s) var(--ease), color var(--dur-s) var(--ease); }
+  .lang-toggle span.active{ background: var(--champagne); color: var(--navy); }
+
+  .menu-btn{ display:none; background:none; border:none; padding:6px; }
+  .menu-btn svg{ width:24px; height:24px; stroke: var(--ivory); transition: stroke var(--dur-s) var(--ease); }
+
+  .mobile-nav{
+    position: fixed; inset:0; background: var(--navy); z-index: 600;
+    display:flex; flex-direction:column; justify-content:center; padding: var(--space-lg);
+    opacity:0; visibility:hidden; transform: translateY(-12px);
+    transition: opacity var(--dur-m) var(--ease), visibility var(--dur-m), transform var(--dur-m) var(--ease);
+  }
+  .mobile-nav.open{ opacity:1; visibility:visible; transform: translateY(0); }
+  .mobile-nav .close-btn{ position:absolute; top:26px; right:var(--space-md); background:none; border:none; }
+  .mobile-nav .close-btn svg{ width:26px; height:26px; stroke: var(--ivory); }
+  .mobile-nav a{ font-family:'Cormorant Garamond', serif; font-size: 38px; color: var(--ivory); padding: 14px 0; border-bottom:1px solid rgba(244,241,233,0.1); }
+  .mobile-nav .btn{ margin-top: var(--space-lg); align-self:stretch; justify-content:center; white-space:normal; text-align:center; padding: 16px 20px; }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative; min-height: 100vh; display:flex; align-items:flex-end;
+    background: var(--navy); overflow:hidden;
+  }
+  .hero-media{ position:absolute; inset:0; }
+  .hero-media img{ width:100%; height:100%; object-fit:cover; opacity:0.72; transform: scale(1.06); animation: heroZoom 18s var(--ease) forwards; }
+  @keyframes heroZoom{ to{ transform: scale(1); } }
+  .hero-media::after{
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(11,24,33,0.72) 0%, rgba(11,24,33,0.35) 38%, rgba(11,24,33,0.55) 72%, rgba(11,24,33,0.94) 100%);
+  }
+  .hero-media::before{
+    content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity:0.045; mix-blend-mode: overlay;
+  }
+  .orbit-arc{ position:absolute; border-radius:50%; border:1px solid rgba(183,162,118,0.22); pointer-events:none; }
+  .orbit-arc.a1{ width:900px; height:900px; top:-420px; right:-260px; animation: spin 90s linear infinite; }
+  .orbit-arc.a2{ width:560px; height:560px; top:-160px; right:-60px; border-color: rgba(244,241,233,0.12); animation: spin 60s linear infinite reverse; }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  .hero-content{ position:relative; z-index:3; width:100%; padding: 200px 0 var(--space-2xl); color: var(--ivory); }
+  .hero-eyebrow{ color: rgba(244,241,233,0.9); }
+  .hero-eyebrow::before{ background: var(--champagne); }
+  .hero h1{
+    font-size: clamp(48px, 8.4vw, 112px); line-height: 0.98; font-weight:500;
+    margin-top: var(--space-md); letter-spacing:-0.02em; max-width: 16ch;
+  }
+  .hero h1 em{ font-style: italic; font-weight:300; color: var(--champagne); }
+  .hero-sub{
+    max-width: 480px; margin-top: var(--space-md); font-size:17px; color: rgba(244,241,233,0.82); font-weight:300;
+  }
+  .hero-ctas{ display:flex; gap: var(--space-sm); margin-top: var(--space-lg); flex-wrap:wrap; }
+
+  .qualify{
+    margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid rgba(244,241,233,0.16);
+    display:flex; align-items:center; gap: var(--space-lg); flex-wrap:wrap;
+  }
+  .qualify-label{ font-size:15px; font-family:'Cormorant Garamond',serif; font-style:italic; color: rgba(244,241,233,0.86); white-space:nowrap; }
+  .qualify-options{ display:flex; gap: var(--space-2xs); flex-wrap:wrap; }
+  .qualify-opt{
+    background: rgba(244,241,233,0.05); border:1px solid rgba(244,241,233,0.22); color: rgba(244,241,233,0.88);
+    padding: 10px 20px; border-radius: 100px; font-size:12.5px; font-weight:500; letter-spacing:0.02em;
+    transition: background-color var(--dur-s) var(--ease), border-color var(--dur-s) var(--ease), transform var(--dur-s) var(--ease);
+  }
+  .qualify-opt:hover{ border-color: var(--champagne); transform: translateY(-2px); }
+  .qualify-opt.active{ background: var(--champagne); color: var(--navy); border-color: var(--champagne); }
+  .qualify-opt:focus-visible{ outline: 2px solid var(--champagne); outline-offset:2px; }
+  .qualify-hint{
+    font-size:13px; color: var(--champagne); max-height:0; overflow:hidden; opacity:0;
+    transition: max-height var(--dur-m) var(--ease), opacity var(--dur-m) var(--ease), margin var(--dur-m) var(--ease);
+    width:100%;
+  }
+  .qualify-hint.show{ max-height:60px; opacity:1; margin-top: var(--space-xs); }
+
+  .scroll-cue{
+    position:absolute; bottom:var(--space-lg); left:50%; transform: translateX(-50%); z-index:3;
+    display:flex; flex-direction:column; align-items:center; gap:8px; color: rgba(244,241,233,0.6);
+  }
+  .scroll-cue .line{ width:1px; height:34px; background: rgba(244,241,233,0.4); overflow:hidden; position:relative; }
+  .scroll-cue .line::after{ content:""; position:absolute; top:-34px; left:0; width:100%; height:100%; background: var(--champagne); animation: scrollLine 2.2s var(--ease) infinite; }
+  @keyframes scrollLine{ to{ transform: translateY(68px); } }
+
+  /* ===== SECTION GENERIC ===== */
+  section{ position:relative; }
+  .section-pad{ padding: var(--space-3xl) 0; }
+  @media (max-width: 1024px){ .section-pad{ padding: var(--space-2xl) 0; } }
+  .section-head{ max-width: 680px; margin-bottom: var(--space-xl); }
+  .section-head h2{ font-size: clamp(32px, 4.4vw, 54px); margin-top: var(--space-sm); line-height:1.08; }
+  .section-head h2 em{ font-style:italic; color: var(--aegean); font-weight:400; }
+  .section-foot-link{ display:inline-flex; align-items:center; gap:8px; margin-top:var(--space-lg); font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--navy); border-bottom:1px solid var(--champagne); padding-bottom:4px; transition: gap var(--dur-s) var(--ease), color var(--dur-s) var(--ease); }
+  .section-foot-link svg{ width:14px; height:14px; transition: transform var(--dur-s) var(--ease); }
+  .section-foot-link:hover{ color: var(--aegean); gap:14px; }
+  .section-foot-link:hover svg{ transform: translateX(3px); }
+
+  /* ===== TRUST ===== */
+  .trust{ background: var(--surface-1); }
+  .trust-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-2xl); align-items:start; }
+  .trust-copy p{ font-size:18px; color: var(--text-lo); font-weight:300; max-width:52ch; }
+  .indicators{ display:grid; grid-template-columns: repeat(2,1fr); gap:1px; background: var(--border-soft); border:1px solid var(--border-soft); border-radius: var(--radius-l); overflow:hidden; }
+  .indicator{ background: var(--surface-1); padding: var(--space-md) var(--space-sm); transition: background-color var(--dur-s) var(--ease); }
+  .indicator:hover{ background: var(--surface-2); }
+  .indicator .num-ic{ width:22px; height:22px; stroke: var(--aegean); margin-bottom:var(--space-xs); }
+  .indicator span{ display:block; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color: var(--stone); font-weight:600; }
+  @media (max-width: 900px){ .trust-grid{ grid-template-columns:1fr; gap: var(--space-lg); } }
+
+  /* ===== SERVICES ===== */
+  .services{ background: var(--navy); color: var(--ivory); }
+  .services .eyebrow{ color: var(--champagne); }
+  .services .eyebrow::before{ background: rgba(244,241,233,0.4); }
+  .services .section-head h2{ color: var(--ivory); }
+  .services .section-head h2 em{ color: var(--champagne); }
+  .service-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(244,241,233,0.14); border:1px solid rgba(244,241,233,0.14); border-radius: var(--radius-l); overflow:hidden; }
+  .service-card{ background: var(--navy); padding: var(--space-xl) var(--space-lg); position:relative; transition: background-color var(--dur-m) var(--ease); }
+  .service-card:nth-child(2){ background:#0f2029; }
+  .service-card:hover{ background:#132a35; }
+  .service-num{ font-family:'Cormorant Garamond',serif; font-size:14px; color: var(--champagne); letter-spacing:0.1em; }
+  .service-card h3{ font-size:30px; color: var(--ivory); margin-top: var(--space-sm); }
+  .service-card p{ margin-top: var(--space-sm); font-size:14.5px; color: rgba(244,241,233,0.66); font-weight:300; min-height:66px; }
+  .service-icon{ width:38px; height:38px; stroke: var(--champagne); margin-bottom: var(--space-md); transition: transform var(--dur-m) var(--ease); }
+  .service-card:hover .service-icon{ transform: translateY(-4px) rotate(-6deg); }
+  .service-link{ display:inline-flex; align-items:center; gap:8px; margin-top: var(--space-lg); font-size:12.5px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color: var(--ivory); border-bottom:1px solid rgba(244,241,233,0.3); padding-bottom:5px; transition: border-color var(--dur-s) var(--ease), gap var(--dur-s) var(--ease); }
+  .service-link svg{ width:13px; height:13px; }
+  .service-card:hover .service-link{ border-color: var(--champagne); gap:13px; }
+  @media (max-width: 900px){ .service-grid{ grid-template-columns:1fr; } }
+
+  /* ===== PROPERTIES ===== */
+  .properties{ background: var(--surface-1); }
+  .prop-top{ display:flex; justify-content:space-between; align-items:flex-end; gap: var(--space-lg); flex-wrap:wrap; margin-bottom: var(--space-lg); }
+  .filters{ display:flex; gap:8px; flex-wrap:wrap; }
+  .filter-label{ font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color: var(--stone); font-weight:600; margin-bottom:10px; display:block; }
+  .filter-chip{
+    border:1px solid var(--border-strong); background:transparent; color: var(--ivory);
+    padding:9px 17px; border-radius:100px; font-size:12px; font-weight:500;
+    transition: background-color var(--dur-s) var(--ease), color var(--dur-s) var(--ease), border-color var(--dur-s) var(--ease);
+  }
+  .filter-chip:hover{ border-color: var(--champagne); }
+  .filter-chip.active{ background: var(--champagne); color: var(--navy); border-color: var(--champagne); }
+
+  .prop-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+  .prop-card{
+    background: var(--surface-2); border:1px solid var(--border-soft); border-radius: var(--radius-l); overflow:hidden; box-shadow: var(--shadow-1);
+    transition: box-shadow var(--dur-m) var(--ease), transform var(--dur-m) var(--ease), border-color var(--dur-m) var(--ease);
+  }
+  .prop-card:hover{ box-shadow: var(--shadow-3), var(--glow-champagne); transform: translateY(-6px); border-color: rgba(183,162,118,0.3); }
+  .prop-media{ position:relative; height:280px; overflow:hidden; }
+  .prop-media img{ width:100%; height:100%; object-fit:cover; transition: transform var(--dur-l) var(--ease); }
+  .prop-card:hover .prop-media img{ transform: scale(1.09); }
+  .prop-media::after{ content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(11,24,33,0) 45%, rgba(11,24,33,0.82) 100%); }
+  .prop-tag{ position:absolute; top:16px; left:16px; z-index:2; background: rgba(244,241,233,0.92); color: var(--navy); font-size:10.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:6px 10px; border-radius:100px; }
+  .prop-loc{ position:absolute; bottom:16px; left:18px; right:18px; z-index:2; color: var(--ivory); font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; font-weight:600; }
+  .prop-body{ padding: var(--space-md); }
+  .prop-body h3{ font-size:23px; color: var(--ivory); }
+  .prop-price{ font-family:'Cormorant Garamond',serif; font-size:19px; color: var(--champagne); margin-top:6px; }
+  .prop-dims{ display:flex; gap:6px; flex-wrap:wrap; margin-top: var(--space-sm); }
+  .prop-dim{ font-size:10.5px; letter-spacing:0.05em; text-transform:uppercase; color: var(--text-lo); border:1px solid var(--border-soft); padding:4px 9px; border-radius: var(--radius-s); }
+  .prop-cta{ margin-top: var(--space-md); display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; color: var(--ivory); border-bottom: 1px solid var(--champagne); padding-bottom:3px; transition: gap var(--dur-s) var(--ease); }
+  .prop-cta svg{ width:12px; height:12px; }
+  .prop-card:hover .prop-cta{ gap:11px; }
+  .prop-disclaimer{ margin-top: var(--space-lg); font-size:12px; color: var(--stone); font-style:italic; }
+  @media (max-width: 1024px){ .prop-grid{ grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 640px){ .prop-grid{ grid-template-columns: 1fr; } }
+
+  /* ===== GOLDEN VISA JOURNEY ===== */
+  .journey{ background: var(--navy); color: var(--ivory); overflow:hidden; }
+  .journey .eyebrow{ color: var(--champagne); } .journey .eyebrow::before{ background: rgba(244,241,233,0.4); }
+  .journey .section-head h2{ color: var(--ivory); }
+  .journey-path{ position:relative; }
+  .journey-path svg.line{ position:absolute; top:38px; left:0; width:100%; height:4px; z-index:0; }
+  .journey-steps{ display:grid; grid-template-columns: repeat(5,1fr); gap: var(--space-sm); position:relative; z-index:1; }
+  .j-step{ cursor:pointer; }
+  .j-dot{ width:16px; height:16px; border-radius:50%; background: var(--navy); border:2px solid var(--champagne); margin-bottom: var(--space-md); transition: background-color var(--dur-s) var(--ease), transform var(--dur-s) var(--ease); }
+  .j-step.active .j-dot{ background: var(--champagne); transform: scale(1.25); }
+  .j-num{ font-family:'Cormorant Garamond',serif; font-size:13px; color: var(--champagne); letter-spacing:0.1em; }
+  .j-title{ font-size:21px; margin-top:6px; }
+  .j-desc{ font-size:13.5px; color: rgba(244,241,233,0.6); font-weight:300; max-height:0; overflow:hidden; opacity:0; transition: max-height var(--dur-m) var(--ease), opacity var(--dur-m) var(--ease), margin-top var(--dur-m) var(--ease); }
+  .j-step.active .j-desc{ max-height:120px; opacity:1; margin-top:8px; }
+  .journey-cta{ margin-top: var(--space-2xl); text-align:center; }
+  @media (max-width: 900px){
+    .journey-steps{ grid-template-columns:1fr; gap: var(--space-lg); }
+    .journey-path svg.line{ display:none; }
+  }
+
+  /* ===== WHY GREECE ===== */
+  .why{ background: var(--surface-0); }
+  .why-grid{ display:grid; grid-template-columns: 0.9fr 1.1fr; gap: var(--space-2xl); align-items:center; }
+  .why-media{ position:relative; border-radius: var(--radius-l); overflow:hidden; aspect-ratio: 4/5; box-shadow: var(--shadow-2); border:1px solid var(--border-soft); }
+  .why-media img{ width:100%; height:100%; object-fit:cover; }
+  .why-points{ display:grid; grid-template-columns: repeat(2,1fr); gap: var(--space-lg) var(--space-md); }
+  .why-point{ border-top: 1px solid var(--border-soft); padding-top: var(--space-md); }
+  .why-point .wp-ic{ width:26px; height:26px; stroke: var(--champagne); margin-bottom: var(--space-sm); }
+  .why-point h3{ font-size:20px; color: var(--ivory); }
+  .why-point p{ font-size:13.5px; color: var(--text-lo); margin-top:8px; font-weight:300; }
+  @media (max-width: 900px){ .why-grid{ grid-template-columns:1fr; gap: var(--space-lg); } .why-points{ grid-template-columns:1fr; } }
+
+  /* ===== AREAS ===== */
+  .areas{ background: var(--surface-1); color: var(--ivory); }
+  .areas .eyebrow{ color: var(--champagne); } .areas .eyebrow::before{ background: rgba(244,241,233,0.4); }
+  .areas .section-head h2{ color: var(--ivory); }
+  .areas-wrap{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap: var(--space-2xl); align-items:start; }
+  .area-list{ display:flex; flex-direction:column; }
+  .area-btn{
+    text-align:left; background:none; border:none; border-top:1px solid rgba(244,241,233,0.14);
+    padding: var(--space-md) 0; display:flex; align-items:center; justify-content:space-between; color: rgba(244,241,233,0.7);
+    transition: color var(--dur-s) var(--ease), padding-left var(--dur-s) var(--ease);
+  }
+  .area-btn:last-child{ border-bottom:1px solid rgba(244,241,233,0.14); }
+  .area-btn span.name{ font-family:'Cormorant Garamond',serif; font-size:26px; }
+  .area-btn svg{ width:16px; height:16px; opacity:0; transform: translateX(-6px); transition: opacity var(--dur-s) var(--ease), transform var(--dur-s) var(--ease); }
+  .area-btn:hover{ color: var(--ivory); padding-left:8px; }
+  .area-btn.active{ color: var(--champagne); padding-left:8px; }
+  .area-btn.active svg{ opacity:1; transform: translateX(0); stroke: var(--champagne); }
+  .area-panel{ background: rgba(244,241,233,0.04); border:1px solid rgba(244,241,233,0.12); border-radius: var(--radius-l); padding: var(--space-lg); min-height: 320px; }
+  .area-panel-media{ height:180px; border-radius: var(--radius-m); overflow:hidden; margin-bottom: var(--space-md); }
+  .area-panel-media img{ width:100%; height:100%; object-fit:cover; }
+  .area-panel h3{ font-size:28px; color: var(--ivory); }
+  .area-facts{ display:grid; grid-template-columns: repeat(3,1fr); gap: var(--space-md); margin-top: var(--space-md); }
+  .area-fact span{ display:block; font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color: var(--champagne); margin-bottom:5px; }
+  .area-fact p{ font-size:13.5px; color: rgba(244,241,233,0.72); font-weight:300; }
+  @media (max-width: 900px){ .areas-wrap{ grid-template-columns:1fr; } .area-facts{ grid-template-columns:1fr; } }
+
+  /* ===== PROCESS ===== */
+  .process{ background: var(--surface-0); }
+  .process-orbit{ position:relative; padding: var(--space-lg) 0; }
+  .process-steps{ display:grid; grid-template-columns: repeat(5,1fr); gap: var(--space-md); position:relative; }
+  .process-steps svg.pline{ position:absolute; top:24px; left:0; width:100%; height:40px; z-index:0; }
+  .p-step{ position:relative; z-index:1; text-align:center; }
+  .p-circle{ width:48px; height:48px; border-radius:50%; background: var(--surface-2); border:1px solid var(--border-strong); color: var(--champagne); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-size:18px; margin:0 auto var(--space-sm); box-shadow: var(--shadow-2); transition: transform var(--dur-m) var(--ease), background-color var(--dur-m) var(--ease), color var(--dur-m) var(--ease); }
+  .p-step:hover .p-circle{ transform: scale(1.1); background: var(--champagne); color: var(--navy); }
+  .p-step h4{ font-size:14px; letter-spacing:0.06em; text-transform:uppercase; font-weight:600; font-family:'Inter',sans-serif; color: var(--ivory); }
+  @media (max-width: 900px){ .process-steps{ grid-template-columns: repeat(2,1fr); gap: var(--space-lg); } .process-steps svg.pline{ display:none; } }
+
+  /* ===== ABOUT ===== */
+  .about{ background: var(--surface-1); }
+  .about-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); align-items:center; }
+  .about-media{ position:relative; border-radius: var(--radius-l); overflow:hidden; box-shadow: var(--shadow-2); border:1px solid var(--border-soft); }
+  .about-media img{ width:100%; aspect-ratio: 5/6; object-fit:cover; }
+  .about-list{ margin-top: var(--space-lg); display:flex; flex-direction:column; gap: var(--space-sm); }
+  .about-list li{ display:flex; align-items:center; gap: var(--space-sm); font-size:15px; color: var(--ivory); }
+  .about-list svg{ width:16px; height:16px; stroke: var(--champagne); flex-shrink:0; }
+  .partner-note{ margin-top: var(--space-lg); font-size:13px; color: var(--text-faint); font-style:italic; border-left:2px solid var(--champagne); padding-left: var(--space-sm); }
+  @media (max-width: 900px){ .about-grid{ grid-template-columns:1fr; gap: var(--space-lg); } }
+
+  /* ===== ELIGIBILITY ===== */
+  .eligibility{ background: var(--surface-0); color: var(--ivory); position:relative; overflow:hidden; }
+  .eligibility::after{ content:""; position:absolute; width:640px; height:640px; border-radius:50%; border:1px solid rgba(183,162,118,0.16); top:50%; left:50%; transform: translate(-50%,-50%); pointer-events:none; }
+  .elig-inner{ position:relative; z-index:1; max-width:720px; margin:0 auto; text-align:center; }
+  .elig-inner .eyebrow{ justify-content:center; color: var(--champagne); }
+  .elig-inner .eyebrow::before{ background: rgba(244,241,233,0.4); }
+  .elig-inner h2{ font-size: clamp(30px,4.6vw,50px); margin-top: var(--space-sm); }
+  .elig-inner p{ margin-top: var(--space-md); color: rgba(244,241,233,0.72); font-size:16px; font-weight:300; }
+  .elig-disclaimer{ margin-top: var(--space-md); font-size:12px; color: var(--stone); font-style:italic; }
+  .elig-inner .btn{ margin-top: var(--space-lg); }
+
+  /* ===== FAQ ===== */
+  .faq{ background: var(--surface-1); }
+  .faq-list{ max-width: 820px; }
+  .faq-item{ border-top:1px solid var(--border-soft); }
+  .faq-item:last-child{ border-bottom:1px solid var(--border-soft); }
+  .faq-q{ width:100%; text-align:left; background:none; border:none; padding: var(--space-md) 0; display:flex; align-items:center; justify-content:space-between; gap:var(--space-md); color: var(--ivory); }
+  .faq-q h4{ font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; }
+  .faq-q svg{ width:18px; height:18px; stroke: var(--champagne); flex-shrink:0; transition: transform var(--dur-s) var(--ease); }
+  .faq-item.open .faq-q svg{ transform: rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; opacity:0; transition: max-height var(--dur-m) var(--ease), opacity var(--dur-m) var(--ease), padding-bottom var(--dur-m) var(--ease); }
+  .faq-item.open .faq-a{ max-height:220px; opacity:1; padding-bottom: var(--space-md); }
+  .faq-a p{ font-size:14.5px; color: var(--text-lo); font-weight:300; max-width:64ch; }
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{ background: var(--surface-0); color: var(--ivory); text-align:center; position:relative; overflow:hidden; }
+  .final-cta .orbit-arc{ border-color: rgba(183,162,118,0.16); }
+  .final-cta .orbit-arc.f1{ width:1100px; height:1100px; top:-560px; left:50%; transform: translateX(-50%); animation: spin 120s linear infinite; }
+  .final-inner{ position:relative; z-index:1; max-width: 680px; margin:0 auto; }
+  .final-inner h2{ font-size: clamp(34px,5.4vw,64px); }
+  .final-inner p{ margin-top: var(--space-md); color: rgba(244,241,233,0.72); font-size:16px; font-weight:300; }
+  .final-ctas{ display:flex; gap: var(--space-sm); justify-content:center; margin-top: var(--space-lg); flex-wrap:wrap; }
+
+  /* ===== CONTACT ===== */
+  .contact{ background: var(--surface-0); }
+  .contact-grid{ display:grid; grid-template-columns: 0.8fr 1.2fr; gap: var(--space-2xl); }
+  .contact-info p{ font-size:15.5px; color: var(--text-lo); font-weight:300; max-width:40ch; }
+  .contact-detail{ margin-top: var(--space-lg); display:flex; align-items:flex-start; gap: var(--space-sm); }
+  .contact-detail svg{ width:18px; height:18px; stroke: var(--champagne); margin-top:2px; flex-shrink:0; }
+  .contact-detail span{ font-size:14px; color: var(--ivory); }
+  .form-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+  .form-field{ display:flex; flex-direction:column; gap:8px; }
+  .form-field.full{ grid-column: 1 / -1; }
+  .form-field label{ font-size:11px; letter-spacing:0.09em; text-transform:uppercase; color: var(--stone); font-weight:600; }
+  .form-field input, .form-field select, .form-field textarea{
+    background: transparent; border:none; border-bottom:1px solid var(--border-strong);
+    padding: 10px 2px; font-size:15px; color: var(--ivory); border-radius:0;
+    transition: border-color var(--dur-s) var(--ease);
+  }
+  .form-field select{ appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23B7A276' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position: right 2px center; }
+  .form-field select option{ background: var(--surface-1); color: var(--ivory); }
+  .form-field textarea{ resize: vertical; min-height:90px; font-family:inherit; line-height:1.6; }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus{ outline:none; border-color: var(--champagne); }
+  .form-note{ font-size:12px; color: var(--text-faint); margin-top: var(--space-sm); }
+  .contact-form .btn{ margin-top: var(--space-md); }
+  .form-success{ display:none; align-items:center; gap:10px; margin-top:var(--space-md); font-size:13.5px; color: var(--champagne); font-weight:500; }
+  .form-success.show{ display:flex; }
+  .form-success svg{ width:18px; height:18px; }
+  @media (max-width: 900px){ .contact-grid{ grid-template-columns:1fr; gap: var(--space-lg); } }
+  @media (max-width: 560px){ .form-grid{ grid-template-columns:1fr; } }
+
+  /* ===== FOOTER ===== */
+  footer{ background: var(--surface-1); color: rgba(244,241,233,0.7); padding: var(--space-2xl) 0 var(--space-lg); border-top:1px solid var(--border-soft); }
+  .footer-grid{ display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: var(--space-lg); padding-bottom: var(--space-xl); border-bottom:1px solid rgba(244,241,233,0.1); }
+  .footer-logo{ font-family:'Cormorant Garamond',serif; font-size:26px; color: var(--ivory); letter-spacing:0.1em; }
+  .footer-logo span{ color: var(--champagne); }
+  .footer-desc{ margin-top: var(--space-sm); font-size:13.5px; max-width:32ch; letter-spacing:0.02em; }
+  .footer-social{ display:flex; gap:10px; margin-top: var(--space-md); }
+  .footer-social a{ width:34px; height:34px; border-radius:50%; border:1px solid rgba(244,241,233,0.25); display:flex; align-items:center; justify-content:center; transition: border-color var(--dur-s) var(--ease), background-color var(--dur-s) var(--ease), transform var(--dur-s) var(--ease); }
+  .footer-social a:hover{ border-color: var(--champagne); background: rgba(183,162,118,0.12); transform: translateY(-3px); }
+  .footer-social svg{ width:15px; height:15px; stroke: var(--ivory); }
+  .footer-col h5{ font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color: var(--champagne); font-weight:600; margin-bottom: var(--space-md); }
+  .footer-col a, .footer-col li{ display:block; font-size:14px; padding: 6px 0; transition: color var(--dur-s) var(--ease); }
+  .footer-col a:hover{ color: var(--ivory); }
+  .footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top: var(--space-md); font-size:12px; flex-wrap:wrap; gap:10px; }
+  @media (max-width: 900px){ .footer-grid{ grid-template-columns: 1fr 1fr; gap: var(--space-lg) var(--space-md); } }
+  @media (max-width: 560px){ .footer-grid{ grid-template-columns: 1fr; } }
+
+  /* ===== MODAL ===== */
+  .modal-overlay{
+    position:fixed; inset:0; z-index: 900; background: rgba(5,11,15,0.82); backdrop-filter: blur(6px);
+    display:flex; align-items:center; justify-content:center; padding: var(--space-md);
+    opacity:0; visibility:hidden; transition: opacity var(--dur-m) var(--ease), visibility var(--dur-m);
+  }
+  .modal-overlay.open{ opacity:1; visibility:visible; }
+  .modal{
+    background: var(--surface-2); border:1px solid var(--border-soft); border-radius: var(--radius-l); max-width: 620px; width:100%;
+    padding: var(--space-xl); position:relative; box-shadow: var(--shadow-3);
+    transform: translateY(24px) scale(0.98); transition: transform var(--dur-m) var(--ease);
+    max-height: 86vh; overflow-y:auto;
+  }
+  .modal-overlay.open .modal{ transform: translateY(0) scale(1); }
+  .modal-close{ position:absolute; top:20px; right:20px; background:none; border:none; padding:6px; }
+  .modal-close svg{ width:20px; height:20px; stroke: var(--ivory); }
+  .modal-progress{ display:flex; gap:6px; margin-bottom: var(--space-lg); }
+  .modal-progress i{ flex:1; height:2px; background: var(--border-soft); border-radius:2px; overflow:hidden; }
+  .modal-progress i span{ display:block; height:100%; width:0%; background: var(--champagne); transition: width var(--dur-m) var(--ease); }
+  .modal-progress i.done span{ width:100%; }
+  .modal-progress i.current span{ width:100%; }
+  .modal-step{ display:none; }
+  .modal-step.active{ display:block; animation: fadeIn var(--dur-s) var(--ease); }
+  @keyframes fadeIn{ from{ opacity:0; transform: translateY(8px);} to{ opacity:1; transform:translateY(0);} }
+  .modal-eyebrow{ font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color: var(--champagne); font-weight:600; }
+  .modal h3{ font-size:28px; margin-top: var(--space-xs); margin-bottom: var(--space-lg); color: var(--ivory); }
+  .modal-options{ display:flex; flex-direction:column; gap:10px; }
+  .modal-option{
+    text-align:left; background: var(--surface-3); color: var(--ivory); border:1px solid var(--border-soft); border-radius: var(--radius-m);
+    padding: 16px 18px; font-size:15px; display:flex; justify-content:space-between; align-items:center;
+    transition: border-color var(--dur-s) var(--ease), background-color var(--dur-s) var(--ease), transform var(--dur-s) var(--ease);
+  }
+  .modal-option:hover{ border-color: var(--champagne); transform: translateX(3px); }
+  .modal-option.selected{ border-color: var(--champagne); background: rgba(183,162,118,0.16); }
+  .modal-option svg{ width:16px; height:16px; opacity:0; stroke: var(--champagne); }
+  .modal-option.selected svg{ opacity:1; }
+  .modal-nav{ display:flex; justify-content:space-between; align-items:center; margin-top: var(--space-lg); }
+  .modal-back{ background:none; border:none; font-size:13px; font-weight:600; color: var(--stone); display:flex; align-items:center; gap:6px; }
+  .modal-back svg{ width:14px; height:14px; }
+  .modal-result-icon{ width:56px; height:56px; border-radius:50%; background: var(--surface-3); border:1px solid var(--border-strong); display:flex; align-items:center; justify-content:center; margin-bottom: var(--space-md); }
+  .modal-result-icon svg{ width:26px; height:26px; stroke: var(--champagne); }
+  .modal-result p{ color: var(--text-lo); }
+  .modal-result p.disclaimer{ font-size:12px; color: var(--text-faint); font-style:italic; margin-top: var(--space-md); }
+  .modal-result .btn{ margin-top: var(--space-lg); width:100%; justify-content:center; }
+
+  /* ===== RESPONSIVE / MOBILE NAV TOGGLE ===== */
+  @media (max-width: 900px){
+    .nav-links{ display:none; }
+    .menu-btn{ display:flex; }
+    .lang-toggle{ display:none; }
+    .header-actions > a.btn{ display:none; }
+    .header-actions{ gap: var(--space-sm); }
+    .lang-toggle-mobile{ display:flex; }
+  }
+  .lang-toggle-mobile{ align-self:flex-start; margin-bottom: var(--space-lg); }
+  @media (max-width: 768px){
+    .hero-content{ padding-top:160px; }
+    .qualify{ flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">ORBIT<span>.</span></a>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#properties" data-i18n="nav.realEstate">Real Estate</a></li>
+        <li><a href="#goldenvisa" data-i18n="nav.goldenVisa">Golden Visa</a></li>
+        <li><a href="#whygreece" data-i18n="nav.whyGreece">Why Greece</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span data-lang-btn="en" class="active">EN</span><span data-lang-btn="tr">TR</span>
+      </button>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">
+        <span data-i18n="nav.cta">Book a Consultation</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+  </button>
+  <button class="lang-toggle lang-toggle-mobile" id="langToggleMobile" aria-label="Switch language">
+    <span data-lang-btn="en" class="active">EN</span><span data-lang-btn="tr">TR</span>
+  </button>
+  <a href="#properties" class="mob-link" data-i18n="nav.realEstate">Real Estate</a>
+  <a href="#goldenvisa" class="mob-link" data-i18n="nav.goldenVisa">Golden Visa</a>
+  <a href="#whygreece" class="mob-link" data-i18n="nav.whyGreece">Why Greece</a>
+  <a href="#about" class="mob-link" data-i18n="nav.about">About</a>
+  <a href="#contact" class="mob-link" data-i18n="nav.contact">Contact</a>
+  <a href="#contact" class="btn btn-champagne" data-i18n="nav.cta">Book a Consultation</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=1800&q=80&auto=format&fit=crop" alt="Contemporary Athens architecture at dusk" loading="eager">
+  </div>
+  <div class="orbit-arc a1"></div>
+  <div class="orbit-arc a2"></div>
+  <div class="container hero-content">
+    <div class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">REAL ESTATE · RESIDENCY · ADVISORY</div>
+    <h1><span data-i18n="hero.title1">YOUR ENTRY POINT</span><br><em data-i18n="hero.title2">TO GREECE.</em></h1>
+    <p class="hero-sub" data-i18n="hero.sub">Strategic real estate investment and Golden Visa advisory for international investors.</p>
+    <div class="hero-ctas">
+      <a href="#properties" class="btn btn-champagne">
+        <span data-i18n="hero.ctaPrimary">Explore Investment Opportunities</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-ghost-light">
+        <span data-i18n="hero.ctaSecondary">Book a Consultation</span>
+      </a>
+    </div>
+
+    <div class="qualify">
+      <span class="qualify-label" data-i18n="hero.qualifyLabel">What are you looking to achieve?</span>
+      <div class="qualify-options" id="qualifyOptions">
+        <button class="qualify-opt" data-target="goldenvisa" data-i18n="hero.qGoldenVisa">Golden Visa</button>
+        <button class="qualify-opt" data-target="properties" data-i18n="hero.qProperty">Property Investment</button>
+        <button class="qualify-opt" data-target="both" data-i18n="hero.qBoth">Both</button>
+        <button class="qualify-opt" data-target="explore" data-i18n="hero.qExplore">Exploring My Options</button>
+      </div>
+      <p class="qualify-hint" id="qualifyHint"></p>
+    </div>
+  </div>
+  <div class="scroll-cue"><span style="font-size:10px;letter-spacing:0.14em;">SCROLL</span><div class="line"></div></div>
+</section>
+
+<!-- ===================== TRUST / INTRO ===================== -->
+<section class="trust section-pad noise">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="trust.eyebrow">ORBIT · GREECE</div>
+        <div class="section-head" style="margin-bottom:0;">
+          <h2 data-i18n="trust.headline">Invest in Greece with clarity.</h2>
+        </div>
+        <div class="trust-copy" style="margin-top:24px;">
+          <p data-i18n="trust.copy">From identifying the right property to navigating the Golden Visa process, ORBIT brings real estate and residency advisory together in one seamless experience.</p>
+        </div>
+      </div>
+      <div class="indicators reveal">
+        <div class="indicator">
+          <svg class="num-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+          <span data-i18n="trust.ind1">Greece</span>
+        </div>
+        <div class="indicator">
+          <svg class="num-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="13" x2="16" y2="13"/></svg>
+          <span data-i18n="trust.ind2">Real Estate</span>
+        </div>
+        <div class="indicator">
+          <svg class="num-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          <span data-i18n="trust.ind3">Golden Visa</span>
+        </div>
+        <div class="indicator">
+          <svg class="num-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="9" cy="9" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M16 10c1.8 0 3-1.3 3-3s-1.2-3-3-3"/><path d="M22 20c0-2.8-2-5-5-5.7"/></svg>
+          <span data-i18n="trust.ind4">International Investors</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="services.eyebrow">WHAT WE DO</div>
+      <h2 data-i18n="services.headline">A complete path <em>to Greece.</em></h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg>
+        <div class="service-num">01 — <span data-i18n="services.s1.tag">REAL ESTATE</span></div>
+        <h3 data-i18n="services.s1.title">Property Investment</h3>
+        <p data-i18n="services.s1.desc">Curated real estate opportunities selected around your investment objectives.</p>
+        <a href="#properties" class="service-link"><span data-i18n="services.s1.cta">Explore Properties</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="4"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+        <div class="service-num">02 — <span data-i18n="services.s2.tag">RESIDENCY</span></div>
+        <h3 data-i18n="services.s2.title">Golden Visa</h3>
+        <p data-i18n="services.s2.desc">End-to-end support through the Greek Golden Visa process.</p>
+        <a href="#goldenvisa" class="service-link"><span data-i18n="services.s2.cta">Explore Golden Visa</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><circle cx="12" cy="12" r="2.5"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1"/></svg>
+        <div class="service-num">03 — <span data-i18n="services.s3.tag">ADVISORY</span></div>
+        <h3 data-i18n="services.s3.title">Investment Advisory</h3>
+        <p data-i18n="services.s3.desc">Strategic guidance throughout your investment journey.</p>
+        <a href="#contact" class="service-link"><span data-i18n="services.s3.cta">Speak With an Advisor</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROPERTIES / INVESTMENT EXPLORER ===================== -->
+<section class="properties section-pad" id="properties">
+  <div class="container">
+    <div class="prop-top">
+      <div class="section-head reveal" style="margin-bottom:0;">
+        <div class="eyebrow" data-i18n="properties.eyebrow">INVESTMENT EXPLORER</div>
+        <h2 data-i18n="properties.headline">Selected properties <em>in Greece.</em></h2>
+      </div>
+    </div>
+    <div class="reveal" style="margin-bottom:40px;">
+      <span class="filter-label" data-i18n="properties.filterLabel">What matters most to you?</span>
+      <div class="filters" id="propFilters">
+        <button class="filter-chip active" data-filter="all" data-i18n="properties.fAll">All</button>
+        <button class="filter-chip" data-filter="goldenvisa" data-i18n="properties.fGoldenVisa">Golden Visa Suitability</button>
+        <button class="filter-chip" data-filter="lifestyle" data-i18n="properties.fLifestyle">Lifestyle</button>
+        <button class="filter-chip" data-filter="capital" data-i18n="properties.fCapital">Capital Preservation</button>
+        <button class="filter-chip" data-filter="rental" data-i18n="properties.fRental">Rental Potential</button>
+      </div>
+    </div>
+
+    <div class="prop-grid">
+      <!-- card 1 -->
+      <div class="prop-card reveal" data-tags="goldenvisa capital">
+        <div class="prop-media">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Contemporary residence interior in Glyfada, Athens">
+          <span class="prop-tag" data-i18n="properties.example">Illustrative Example</span>
+          <span class="prop-loc">ATHENS · GLYFADA</span>
+        </div>
+        <div class="prop-body">
+          <h3 data-i18n="properties.p1.title">Contemporary Residence</h3>
+          <div class="prop-price">€430,000</div>
+          <div class="prop-dims">
+            <span class="prop-dim" data-i18n="properties.tagGoldenVisa">Golden Visa</span>
+            <span class="prop-dim" data-i18n="properties.tagCapital">Capital Preservation</span>
+          </div>
+          <a href="#contact" class="prop-cta"><span data-i18n="properties.exploreProperty">Explore Property</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="prop-card reveal" data-tags="lifestyle rental">
+        <div class="prop-media">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Mediterranean coastal property on the Athens Riviera">
+          <span class="prop-tag" data-i18n="properties.example">Illustrative Example</span>
+          <span class="prop-loc">ATHENS RIVIERA · VOULIAGMENI</span>
+        </div>
+        <div class="prop-body">
+          <h3 data-i18n="properties.p2.title">Coastal Villa</h3>
+          <div class="prop-price">€1,250,000</div>
+          <div class="prop-dims">
+            <span class="prop-dim" data-i18n="properties.tagLifestyle">Lifestyle</span>
+            <span class="prop-dim" data-i18n="properties.tagRental">Rental Potential</span>
+          </div>
+          <a href="#contact" class="prop-cta"><span data-i18n="properties.exploreProperty">Explore Property</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="prop-card reveal" data-tags="goldenvisa rental">
+        <div class="prop-media">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Renovated apartment building in central Athens">
+          <span class="prop-tag" data-i18n="properties.example">Illustrative Example</span>
+          <span class="prop-loc">CENTRAL ATHENS · KOLONAKI</span>
+        </div>
+        <div class="prop-body">
+          <h3 data-i18n="properties.p3.title">Renovated Apartment</h3>
+          <div class="prop-price">€310,000</div>
+          <div class="prop-dims">
+            <span class="prop-dim" data-i18n="properties.tagGoldenVisa">Golden Visa</span>
+            <span class="prop-dim" data-i18n="properties.tagRental">Rental Potential</span>
+          </div>
+          <a href="#contact" class="prop-cta"><span data-i18n="properties.exploreProperty">Explore Property</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="prop-card reveal" data-tags="lifestyle capital">
+        <div class="prop-media">
+          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Modern minimalist house facade in Piraeus">
+          <span class="prop-tag" data-i18n="properties.example">Illustrative Example</span>
+          <span class="prop-loc">PIRAEUS</span>
+        </div>
+        <div class="prop-body">
+          <h3 data-i18n="properties.p4.title">Modern Townhouse</h3>
+          <div class="prop-price">€520,000</div>
+          <div class="prop-dims">
+            <span class="prop-dim" data-i18n="properties.tagLifestyle">Lifestyle</span>
+            <span class="prop-dim" data-i18n="properties.tagCapital">Capital Preservation</span>
+          </div>
+          <a href="#contact" class="prop-cta"><span data-i18n="properties.exploreProperty">Explore Property</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="prop-card reveal" data-tags="goldenvisa lifestyle">
+        <div class="prop-media">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Design-forward penthouse living space">
+          <span class="prop-tag" data-i18n="properties.example">Illustrative Example</span>
+          <span class="prop-loc">ATHENS · GLYFADA</span>
+        </div>
+        <div class="prop-body">
+          <h3 data-i18n="properties.p5.title">Design Penthouse</h3>
+          <div class="prop-price">€780,000</div>
+          <div class="prop-dims">
+            <span class="prop-dim" data-i18n="properties.tagGoldenVisa">Golden Visa</span>
+            <span class="prop-dim" data-i18n="properties.tagLifestyle">Lifestyle</span>
+          </div>
+          <a href="#contact" class="prop-cta"><span data-i18n="properties.exploreProperty">Explore Property</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div class="prop-card reveal" data-tags="capital rental">
+        <div class="prop-media">
+          <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Investment apartment with balcony view over Athens">
+          <span class="prop-tag" data-i18n="properties.example">Illustrative Example</span>
+          <span class="prop-loc">CENTRAL ATHENS</span>
+        </div>
+        <div class="prop-body">
+          <h3 data-i18n="properties.p6.title">Urban Investment Flat</h3>
+          <div class="prop-price">€245,000</div>
+          <div class="prop-dims">
+            <span class="prop-dim" data-i18n="properties.tagCapital">Capital Preservation</span>
+            <span class="prop-dim" data-i18n="properties.tagRental">Rental Potential</span>
+          </div>
+          <a href="#contact" class="prop-cta"><span data-i18n="properties.exploreProperty">Explore Property</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="prop-disclaimer reveal" data-i18n="properties.disclaimer">Illustrative data for demonstration purposes only. Actual listings are provided by ORBIT's partner network upon consultation.</p>
+  </div>
+</section>
+
+<!-- ===================== GOLDEN VISA JOURNEY ===================== -->
+<section class="journey section-pad" id="goldenvisa">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="journey.eyebrow">GOLDEN VISA</div>
+      <h2 data-i18n="journey.headline">Residency, structured <em>around your investment.</em></h2>
+    </div>
+    <div class="journey-path reveal">
+      <svg class="line" viewBox="0 0 1000 4" preserveAspectRatio="none"><line x1="0" y1="2" x2="1000" y2="2" stroke="rgba(244,241,233,0.16)" stroke-width="1"/></svg>
+      <div class="journey-steps" id="journeySteps">
+        <div class="j-step active" data-step="0">
+          <div class="j-dot"></div>
+          <div class="j-num">STEP 01</div>
+          <div class="j-title" data-i18n="journey.s1.title">Consultation</div>
+          <div class="j-desc" data-i18n="journey.s1.desc">Understand your goals and eligibility.</div>
+        </div>
+        <div class="j-step" data-step="1">
+          <div class="j-dot"></div>
+          <div class="j-num">STEP 02</div>
+          <div class="j-title" data-i18n="journey.s2.title">Property Selection</div>
+          <div class="j-desc" data-i18n="journey.s2.desc">Identify suitable investment opportunities.</div>
+        </div>
+        <div class="j-step" data-step="2">
+          <div class="j-dot"></div>
+          <div class="j-num">STEP 03</div>
+          <div class="j-title" data-i18n="journey.s3.title">Due Diligence</div>
+          <div class="j-desc" data-i18n="journey.s3.desc">Review the property and investment structure.</div>
+        </div>
+        <div class="j-step" data-step="3">
+          <div class="j-dot"></div>
+          <div class="j-num">STEP 04</div>
+          <div class="j-title" data-i18n="journey.s4.title">Application</div>
+          <div class="j-desc" data-i18n="journey.s4.desc">Coordinate the residency application process.</div>
+        </div>
+        <div class="j-step" data-step="4">
+          <div class="j-dot"></div>
+          <div class="j-num">STEP 05</div>
+          <div class="j-title" data-i18n="journey.s5.title">Residence</div>
+          <div class="j-desc" data-i18n="journey.s5.desc">Complete the process and establish your connection to Greece.</div>
+        </div>
+      </div>
+    </div>
+    <div class="journey-cta reveal">
+      <a href="#eligibility" class="btn btn-champagne"><span data-i18n="journey.cta">Discuss Your Eligibility</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY GREECE ===================== -->
+<section class="why section-pad" id="whygreece">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-media reveal-scale">
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Athens skyline at golden hour">
+      </div>
+      <div>
+        <div class="eyebrow reveal" data-i18n="why.eyebrow">WHY GREECE</div>
+        <div class="section-head reveal" style="margin-bottom:32px;">
+          <h2><span data-i18n="why.headline1">More than a destination.</span><br><em data-i18n="why.headline2">A strategic European base.</em></h2>
+        </div>
+        <div class="why-points">
+          <div class="why-point reveal">
+            <svg class="wp-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 010 18M12 3a13 13 0 000 18"/></svg>
+            <h3 data-i18n="why.p1.title">European Access</h3>
+            <p data-i18n="why.p1.desc">Greece offers a strategic position within Europe.</p>
+          </div>
+          <div class="why-point reveal">
+            <svg class="wp-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="13" x2="16" y2="13"/></svg>
+            <h3 data-i18n="why.p2.title">Real Estate</h3>
+            <p data-i18n="why.p2.desc">A diverse and evolving property market.</p>
+          </div>
+          <div class="why-point reveal">
+            <svg class="wp-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 3l2.4 5.5 6 .6-4.5 4 1.3 5.9L12 16l-5.2 3 1.3-5.9-4.5-4 6-.6z"/></svg>
+            <h3 data-i18n="why.p3.title">Lifestyle</h3>
+            <p data-i18n="why.p3.desc">Mediterranean living with major urban centers.</p>
+          </div>
+          <div class="why-point reveal">
+            <svg class="wp-ic" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg>
+            <h3 data-i18n="why.p4.title">Long-Term Value</h3>
+            <p data-i18n="why.p4.desc">An opportunity to combine property ownership with residency planning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INTERACTIVE AREAS ===================== -->
+<section class="areas section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="areas.eyebrow">WHERE TO INVEST</div>
+      <h2 data-i18n="areas.headline">Explore Greece, <em>area by area.</em></h2>
+    </div>
+    <div class="areas-wrap reveal">
+      <div class="area-list" id="areaList">
+        <button class="area-btn active" data-area="0">
+          <span class="name" data-i18n="areas.a1.name">Central Athens</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </button>
+        <button class="area-btn" data-area="1">
+          <span class="name" data-i18n="areas.a2.name">Glyfada</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </button>
+        <button class="area-btn" data-area="2">
+          <span class="name" data-i18n="areas.a3.name">Athens Riviera</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </button>
+        <button class="area-btn" data-area="3">
+          <span class="name" data-i18n="areas.a4.name">Piraeus</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </button>
+      </div>
+      <div class="area-panel" id="areaPanel">
+        <div class="area-panel-media">
+          <img id="areaImg" src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=900&q=80&auto=format&fit=crop" alt="Central Athens architecture" loading="lazy">
+        </div>
+        <h3 id="areaName" data-i18n="areas.a1.name">Central Athens</h3>
+        <div class="area-facts">
+          <div class="area-fact"><span data-i18n="areas.lifestyle">Lifestyle</span><p id="areaLifestyle" data-i18n="areas.a1.lifestyle">Urban, cultural, walkable — museums, dining and business in one core.</p></div>
+          <div class="area-fact"><span data-i18n="areas.character">Property Character</span><p id="areaCharacter" data-i18n="areas.a1.character">Neoclassical buildings and renovated apartments in established neighborhoods.</p></div>
+          <div class="area-fact"><span data-i18n="areas.profile">Investment Profile</span><p id="areaProfile" data-i18n="areas.a1.profile">Strong rental demand from professionals and long-term city presence.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="process section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="process.eyebrow">THE JOURNEY</div>
+      <h2 data-i18n="process.headline">A clear path, <em>start to finish.</em></h2>
+    </div>
+    <div class="process-orbit reveal">
+      <div class="process-steps">
+        <svg class="pline" viewBox="0 0 1000 40" preserveAspectRatio="none"><path d="M0,24 C 150,4 250,44 400,24 C 550,4 650,44 800,24 C 900,10 950,30 1000,24" fill="none" stroke="rgba(244,241,233,0.18)" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"/></svg>
+        <div class="p-step"><div class="p-circle">01</div><h4 data-i18n="process.p1">Discover</h4></div>
+        <div class="p-step"><div class="p-circle">02</div><h4 data-i18n="process.p2">Select</h4></div>
+        <div class="p-step"><div class="p-circle">03</div><h4 data-i18n="process.p3">Invest</h4></div>
+        <div class="p-step"><div class="p-circle">04</div><h4 data-i18n="process.p4">Apply</h4></div>
+        <div class="p-step"><div class="p-circle">05</div><h4 data-i18n="process.p5">Arrive</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about section-pad" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal-scale">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Refined modern architecture representing ORBIT's advisory approach">
+      </div>
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="about.eyebrow">ABOUT ORBIT</div>
+        <div class="section-head" style="margin-bottom:0;">
+          <h2 data-i18n="about.headline">A more considered <em>way to enter Greece.</em></h2>
+        </div>
+        <p style="margin-top:20px;font-size:15.5px;color:var(--text-lo);font-weight:300;max-width:48ch;" data-i18n="about.copy">ORBIT is the trusted entry point between international investors and the Greek investment ecosystem — combining real estate, investment strategy, residency guidance and local knowledge into one coherent journey.</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about.l1">Real estate</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about.l2">Investment strategy</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about.l3">Residency guidance</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about.l4">Local knowledge</span></li>
+        </ul>
+        <p class="partner-note" data-i18n="about.partnerNote">ORBIT works with selected real estate and immigration specialists in Greece. Delivered with our trusted local partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ELIGIBILITY ===================== -->
+<section class="eligibility section-pad" id="eligibility">
+  <div class="orbit-arc" style="width:500px;height:500px;top:-220px;left:-160px;border-color:rgba(244,241,233,0.08);"></div>
+  <div class="container">
+    <div class="elig-inner reveal">
+      <div class="eyebrow" data-i18n="elig.eyebrow">SUITABILITY</div>
+      <h2 data-i18n="elig.headline">Could Greece be the right investment route for you?</h2>
+      <p data-i18n="elig.copy">Answer a few short questions and receive an initial view on how Greece may fit your investment and residency goals.</p>
+      <p class="elig-disclaimer" data-i18n="elig.disclaimer">This is not a legal determination. It is an initial investment suitability experience.</p>
+      <button class="btn btn-champagne" id="openQualifyModal">
+        <span data-i18n="elig.cta">Explore My Options</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </button>
+      <div style="margin-top:14px;font-size:12px;letter-spacing:0.05em;color:rgba(244,241,233,0.5);" data-i18n="elig.micro">2 minutes · Private · No commitment</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="faq.eyebrow">QUESTIONS</div>
+      <h2 data-i18n="faq.headline">Frequently <em>asked.</em></h2>
+    </div>
+    <div class="faq-list reveal" id="faqList">
+      <div class="faq-item open">
+        <button class="faq-q"><h4 data-i18n="faq.q1.q">What is the Greece Golden Visa program?</h4>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><p data-i18n="faq.q1.a">Greece's residency-by-investment program allows qualifying investors to obtain Greek residency through an approved real estate or capital investment. Current thresholds and requirements are confirmed with you directly by an ORBIT advisor, based on the latest official guidance.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><h4 data-i18n="faq.q2.q">How does ORBIT work with local partners?</h4>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><p data-i18n="faq.q2.a">ORBIT operates as a partner-agnostic advisory layer, coordinating with selected real estate, legal and immigration specialists in Greece so you experience one coherent journey from start to finish.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><h4 data-i18n="faq.q3.q">How long does the process typically take?</h4>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><p data-i18n="faq.q3.a">Timelines vary by investor circumstances and property selection. Your ORBIT advisor will walk you through a realistic timeline based on current processing conditions during your consultation.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><h4 data-i18n="faq.q4.q">Is real estate the only investment route?</h4>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><p data-i18n="faq.q4.a">Real estate is the most common route, but alternative qualifying investment options may exist. ORBIT will help you understand which path aligns with your goals.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final-cta section-pad">
+  <div class="orbit-arc f1"></div>
+  <div class="container">
+    <div class="final-inner reveal">
+      <h2 data-i18n="finalCta.headline">Ready to find your place in Greece?</h2>
+      <p data-i18n="finalCta.sub">Start with a private consultation with the ORBIT team.</p>
+      <div class="final-ctas">
+        <a href="#contact" class="btn btn-champagne"><span data-i18n="finalCta.ctaPrimary">Book a Consultation</span></a>
+        <a href="#properties" class="btn btn-ghost-light"><span data-i18n="finalCta.ctaSecondary">Explore Properties</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact section-pad" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="contact.eyebrow">GET IN TOUCH</div>
+        <div class="section-head" style="margin-bottom:0;">
+          <h2 data-i18n="contact.headline">Request a <em>consultation.</em></h2>
+        </div>
+        <p style="margin-top:20px;" data-i18n="contact.copy">Share a few details and an ORBIT advisor will reach out to discuss your goals in Greece.</p>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 7 9-7"/><rect x="3" y="5" width="18" height="14" rx="1"/></svg>
+          <span>advisory@orbit-invest.com</span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8.1 9.7a16 16 0 006.2 6.2l1.2-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg>
+          <span>+30 210 000 0000</span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="contact.address">Athens, Greece</span>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-grid">
+          <div class="form-field">
+            <label data-i18n="contact.fullName">Full Name</label>
+            <input type="text" name="fullName" required>
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.email">Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.phone">Phone</label>
+            <input type="tel" name="phone">
+          </div>
+          <div class="form-field">
+            <label data-i18n="contact.country">Country of Residence</label>
+            <input type="text" name="country">
+          </div>
+          <div class="form-field full">
+            <label data-i18n="contact.interest">Investment Interest</label>
+            <select name="interest">
+              <option data-i18n="contact.optGoldenVisa">Golden Visa</option>
+              <option data-i18n="contact.optProperty">Property Investment</option>
+              <option data-i18n="contact.optBoth">Both</option>
+              <option data-i18n="contact.optGeneral">General Consultation</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label data-i18n="contact.message">Message</label>
+            <textarea name="message"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <span data-i18n="contact.submit">Request a Consultation</span>
+        </button>
+        <p class="form-note" data-i18n="contact.note">This form is a design demonstration and does not currently send data.</p>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+          <span data-i18n="contact.success">Thank you — an ORBIT advisor will be in touch shortly.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">ORBIT<span>.</span></div>
+        <p class="footer-desc" data-i18n="footer.desc">Real Estate · Investment · Residency</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M12 16v-3a2 2 0 014 0v3"/><line x1="12" y1="11" x2="12" y2="16"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.navHeading">Navigate</h5>
+        <a href="#properties" data-i18n="nav.realEstate">Real Estate</a>
+        <a href="#goldenvisa" data-i18n="nav.goldenVisa">Golden Visa</a>
+        <a href="#whygreece" data-i18n="nav.whyGreece">Why Greece</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.legalHeading">Legal</h5>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms</a>
+        <a href="#" data-i18n="footer.cookie">Cookie Policy</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.contactHeading">Contact</h5>
+        <span>advisory@orbit-invest.com</span>
+        <span>+30 210 000 0000</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ORBIT. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <span data-i18n="footer.tagline">A boutique investment migration &amp; real estate advisory.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== QUALIFY MODAL ===================== -->
+<div class="modal-overlay" id="qualifyModal">
+  <div class="modal">
+    <button class="modal-close" id="closeQualifyModal" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+    <div class="modal-progress">
+      <i class="current" data-p="0"><span></span></i>
+      <i data-p="1"><span></span></i>
+      <i data-p="2"><span></span></i>
+      <i data-p="3"><span></span></i>
+    </div>
+
+    <div class="modal-step active" data-mstep="0">
+      <div class="modal-eyebrow" data-i18n="modal.q1.eyebrow">QUESTION 01</div>
+      <h3 data-i18n="modal.q1.q">What brings you to Greece?</h3>
+      <div class="modal-options" data-question="q1">
+        <button class="modal-option" data-value="goldenvisa"><span data-i18n="modal.q1.o1">Golden Visa</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="property"><span data-i18n="modal.q1.o2">Property Investment</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="both"><span data-i18n="modal.q1.o3">Both</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="exploring"><span data-i18n="modal.q1.o4">Exploring</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+      </div>
+    </div>
+
+    <div class="modal-step" data-mstep="1">
+      <div class="modal-eyebrow" data-i18n="modal.q2.eyebrow">QUESTION 02</div>
+      <h3 data-i18n="modal.q2.q">What is your estimated investment range?</h3>
+      <div class="modal-options" data-question="q2">
+        <button class="modal-option" data-value="r1"><span data-i18n="modal.q2.o1">Under €250,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="r2"><span data-i18n="modal.q2.o2">€250,000 – €500,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="r3"><span data-i18n="modal.q2.o3">€500,000 – €1,000,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="r4"><span data-i18n="modal.q2.o4">€1,000,000+</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+      </div>
+      <button class="modal-back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg><span data-i18n="modal.back">Back</span></button>
+    </div>
+
+    <div class="modal-step" data-mstep="2">
+      <div class="modal-eyebrow" data-i18n="modal.q3.eyebrow">QUESTION 03</div>
+      <h3 data-i18n="modal.q3.q">When are you considering investing?</h3>
+      <div class="modal-options" data-question="q3">
+        <button class="modal-option" data-value="t1"><span data-i18n="modal.q3.o1">Within 3 months</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="t2"><span data-i18n="modal.q3.o2">3–6 months</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="t3"><span data-i18n="modal.q3.o3">6–12 months</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="t4"><span data-i18n="modal.q3.o4">Exploring for now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+      </div>
+      <button class="modal-back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg><span data-i18n="modal.back">Back</span></button>
+    </div>
+
+    <div class="modal-step" data-mstep="3">
+      <div class="modal-eyebrow" data-i18n="modal.q4.eyebrow">QUESTION 04</div>
+      <h3 data-i18n="modal.q4.q">What matters most to you?</h3>
+      <div class="modal-options" data-question="q4">
+        <button class="modal-option" data-value="residency"><span data-i18n="modal.q4.o1">Residency</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="capital"><span data-i18n="modal.q4.o2">Capital Preservation</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="rental"><span data-i18n="modal.q4.o3">Rental Potential</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="lifestyle"><span data-i18n="modal.q4.o4">Lifestyle</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="combo"><span data-i18n="modal.q4.o5">Combination</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+      </div>
+      <button class="modal-back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg><span data-i18n="modal.back">Back</span></button>
+    </div>
+
+    <div class="modal-step" data-mstep="4">
+      <div class="modal-result">
+        <div class="modal-result-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="4"/></svg>
+        </div>
+        <div class="modal-eyebrow" data-i18n="modal.result.eyebrow">YOUR RESULT</div>
+        <h3 data-i18n="modal.result.title">Greece may be a suitable route based on your current goals.</h3>
+        <p data-i18n="modal.result.body">Based on your answers, ORBIT can help you explore relevant property and Golden Visa options aligned with your timeline and objectives.</p>
+        <p class="disclaimer" data-i18n="modal.result.disclaimer">This is not a legal determination — it is an initial investment suitability experience.</p>
+        <a href="#contact" class="btn btn-primary" id="modalResultCta">
+          <span data-i18n="modal.result.cta">Speak with an ORBIT Advisor</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============ TRANSLATIONS ============ */
+const translations = {
+  en: {
+    "nav.realEstate":"Real Estate","nav.goldenVisa":"Golden Visa","nav.whyGreece":"Why Greece","nav.about":"About","nav.contact":"Contact","nav.cta":"Book a Consultation",
+    "hero.eyebrow":"REAL ESTATE · RESIDENCY · ADVISORY","hero.title1":"YOUR ENTRY POINT","hero.title2":"TO GREECE.",
+    "hero.sub":"Strategic real estate investment and Golden Visa advisory for international investors.",
+    "hero.ctaPrimary":"Explore Investment Opportunities","hero.ctaSecondary":"Book a Consultation",
+    "hero.qualifyLabel":"What are you looking to achieve?","hero.qGoldenVisa":"Golden Visa","hero.qProperty":"Property Investment","hero.qBoth":"Both","hero.qExplore":"Exploring My Options",
+    "hint.goldenvisa":"Showing you the Golden Visa journey below.","hint.properties":"Showing you selected properties in Greece.","hint.both":"We'll guide you through both property and residency.","hint.explore":"Take our 2-minute suitability experience below.",
+    "trust.eyebrow":"ORBIT · GREECE","trust.headline":"Invest in Greece with clarity.",
+    "trust.copy":"From identifying the right property to navigating the Golden Visa process, ORBIT brings real estate and residency advisory together in one seamless experience.",
+    "trust.ind1":"Greece","trust.ind2":"Real Estate","trust.ind3":"Golden Visa","trust.ind4":"International Investors",
+    "services.eyebrow":"WHAT WE DO","services.headline":"A complete path <em>to Greece.</em>",
+    "services.s1.tag":"REAL ESTATE","services.s1.title":"Property Investment","services.s1.desc":"Curated real estate opportunities selected around your investment objectives.","services.s1.cta":"Explore Properties",
+    "services.s2.tag":"RESIDENCY","services.s2.title":"Golden Visa","services.s2.desc":"End-to-end support through the Greek Golden Visa process.","services.s2.cta":"Explore Golden Visa",
+    "services.s3.tag":"ADVISORY","services.s3.title":"Investment Advisory","services.s3.desc":"Strategic guidance throughout your investment journey.","services.s3.cta":"Speak With an Advisor",
+    "properties.eyebrow":"INVESTMENT EXPLORER","properties.headline":"Selected properties <em>in Greece.</em>","properties.filterLabel":"What matters most to you?",
+    "properties.fAll":"All","properties.fGoldenVisa":"Golden Visa Suitability","properties.fLifestyle":"Lifestyle","properties.fCapital":"Capital Preservation","properties.fRental":"Rental Potential",
+    "properties.example":"Illustrative Example","properties.exploreProperty":"Explore Property",
+    "properties.tagGoldenVisa":"Golden Visa","properties.tagCapital":"Capital Preservation","properties.tagLifestyle":"Lifestyle","properties.tagRental":"Rental Potential",
+    "properties.p1.title":"Contemporary Residence","properties.p2.title":"Coastal Villa","properties.p3.title":"Renovated Apartment","properties.p4.title":"Modern Townhouse","properties.p5.title":"Design Penthouse","properties.p6.title":"Urban Investment Flat",
+    "properties.disclaimer":"Illustrative data for demonstration purposes only. Actual listings are provided by ORBIT's partner network upon consultation.",
+    "journey.eyebrow":"GOLDEN VISA","journey.headline":"Residency, structured <em>around your investment.</em>",
+    "journey.s1.title":"Consultation","journey.s1.desc":"Understand your goals and eligibility.",
+    "journey.s2.title":"Property Selection","journey.s2.desc":"Identify suitable investment opportunities.",
+    "journey.s3.title":"Due Diligence","journey.s3.desc":"Review the property and investment structure.",
+    "journey.s4.title":"Application","journey.s4.desc":"Coordinate the residency application process.",
+    "journey.s5.title":"Residence","journey.s5.desc":"Complete the process and establish your connection to Greece.",
+    "journey.cta":"Discuss Your Eligibility",
+    "why.eyebrow":"WHY GREECE","why.headline1":"More than a destination.","why.headline2":"A strategic European base.",
+    "why.p1.title":"European Access","why.p1.desc":"Greece offers a strategic position within Europe.",
+    "why.p2.title":"Real Estate","why.p2.desc":"A diverse and evolving property market.",
+    "why.p3.title":"Lifestyle","why.p3.desc":"Mediterranean living with major urban centers.",
+    "why.p4.title":"Long-Term Value","why.p4.desc":"An opportunity to combine property ownership with residency planning.",
+    "areas.eyebrow":"WHERE TO INVEST","areas.headline":"Explore Greece, <em>area by area.</em>","areas.lifestyle":"Lifestyle","areas.character":"Property Character","areas.profile":"Investment Profile",
+    "areas.a1.name":"Central Athens","areas.a1.lifestyle":"Urban, cultural, walkable — museums, dining and business in one core.","areas.a1.character":"Neoclassical buildings and renovated apartments in established neighborhoods.","areas.a1.profile":"Strong rental demand from professionals and long-term city presence.",
+    "areas.a2.name":"Glyfada","areas.a2.lifestyle":"Upscale coastal suburb with marinas, boutiques and dining.","areas.a2.character":"Contemporary residences and villas with easy airport access.","areas.a2.profile":"Popular with international buyers seeking lifestyle and Golden Visa suitability.",
+    "areas.a3.name":"Athens Riviera","areas.a3.lifestyle":"The coastline stretching south of Athens — beach clubs, marinas and resorts.","areas.a3.character":"Premium villas and new-build residences along the water.","areas.a3.profile":"Positioned for long-term appreciation amid major coastal redevelopment.",
+    "areas.a4.name":"Piraeus","areas.a4.lifestyle":"Greece's main port city, increasingly residential and connected to central Athens.","areas.a4.character":"Modern apartments and townhouses at accessible price points.","areas.a4.profile":"Emerging area with strong rental potential and urban renewal momentum.",
+    "process.eyebrow":"THE JOURNEY","process.headline":"A clear path, <em>start to finish.</em>","process.p1":"Discover","process.p2":"Select","process.p3":"Invest","process.p4":"Apply","process.p5":"Arrive",
+    "about.eyebrow":"ABOUT ORBIT","about.headline":"A more considered <em>way to enter Greece.</em>",
+    "about.copy":"ORBIT is the trusted entry point between international investors and the Greek investment ecosystem — combining real estate, investment strategy, residency guidance and local knowledge into one coherent journey.",
+    "about.l1":"Real estate","about.l2":"Investment strategy","about.l3":"Residency guidance","about.l4":"Local knowledge",
+    "about.partnerNote":"ORBIT works with selected real estate and immigration specialists in Greece. Delivered with our trusted local partners.",
+    "elig.eyebrow":"SUITABILITY","elig.headline":"Could Greece be the right investment route for you?",
+    "elig.copy":"Answer a few short questions and receive an initial view on how Greece may fit your investment and residency goals.",
+    "elig.disclaimer":"This is not a legal determination. It is an initial investment suitability experience.","elig.cta":"Explore My Options","elig.micro":"2 minutes · Private · No commitment",
+    "faq.eyebrow":"QUESTIONS","faq.headline":"Frequently <em>asked.</em>",
+    "faq.q1.q":"What is the Greece Golden Visa program?","faq.q1.a":"Greece's residency-by-investment program allows qualifying investors to obtain Greek residency through an approved real estate or capital investment. Current thresholds and requirements are confirmed with you directly by an ORBIT advisor, based on the latest official guidance.",
+    "faq.q2.q":"How does ORBIT work with local partners?","faq.q2.a":"ORBIT operates as a partner-agnostic advisory layer, coordinating with selected real estate, legal and immigration specialists in Greece so you experience one coherent journey from start to finish.",
+    "faq.q3.q":"How long does the process typically take?","faq.q3.a":"Timelines vary by investor circumstances and property selection. Your ORBIT advisor will walk you through a realistic timeline based on current processing conditions during your consultation.",
+    "faq.q4.q":"Is real estate the only investment route?","faq.q4.a":"Real estate is the most common route, but alternative qualifying investment options may exist. ORBIT will help you understand which path aligns with your goals.",
+    "finalCta.headline":"Ready to find your place in Greece?","finalCta.sub":"Start with a private consultation with the ORBIT team.","finalCta.ctaPrimary":"Book a Consultation","finalCta.ctaSecondary":"Explore Properties",
+    "contact.eyebrow":"GET IN TOUCH","contact.headline":"Request a <em>consultation.</em>","contact.copy":"Share a few details and an ORBIT advisor will reach out to discuss your goals in Greece.",
+    "contact.address":"Athens, Greece","contact.fullName":"Full Name","contact.email":"Email","contact.phone":"Phone","contact.country":"Country of Residence","contact.interest":"Investment Interest","contact.message":"Message",
+    "contact.optGoldenVisa":"Golden Visa","contact.optProperty":"Property Investment","contact.optBoth":"Both","contact.optGeneral":"General Consultation",
+    "contact.submit":"Request a Consultation","contact.note":"This form is a design demonstration and does not currently send data.","contact.success":"Thank you — an ORBIT advisor will be in touch shortly.",
+    "footer.desc":"Real Estate · Investment · Residency","footer.navHeading":"Navigate","footer.legalHeading":"Legal","footer.contactHeading":"Contact",
+    "footer.privacy":"Privacy Policy","footer.terms":"Terms","footer.cookie":"Cookie Policy","footer.rights":"All rights reserved.","footer.tagline":"A boutique investment migration & real estate advisory.",
+    "modal.back":"Back",
+    "modal.q1.eyebrow":"QUESTION 01","modal.q1.q":"What brings you to Greece?","modal.q1.o1":"Golden Visa","modal.q1.o2":"Property Investment","modal.q1.o3":"Both","modal.q1.o4":"Exploring",
+    "modal.q2.eyebrow":"QUESTION 02","modal.q2.q":"What is your estimated investment range?","modal.q2.o1":"Under €250,000","modal.q2.o2":"€250,000 – €500,000","modal.q2.o3":"€500,000 – €1,000,000","modal.q2.o4":"€1,000,000+",
+    "modal.q3.eyebrow":"QUESTION 03","modal.q3.q":"When are you considering investing?","modal.q3.o1":"Within 3 months","modal.q3.o2":"3–6 months","modal.q3.o3":"6–12 months","modal.q3.o4":"Exploring for now",
+    "modal.q4.eyebrow":"QUESTION 04","modal.q4.q":"What matters most to you?","modal.q4.o1":"Residency","modal.q4.o2":"Capital Preservation","modal.q4.o3":"Rental Potential","modal.q4.o4":"Lifestyle","modal.q4.o5":"Combination",
+    "modal.result.eyebrow":"YOUR RESULT","modal.result.title":"Greece may be a suitable route based on your current goals.","modal.result.body":"Based on your answers, ORBIT can help you explore relevant property and Golden Visa options aligned with your timeline and objectives.","modal.result.disclaimer":"This is not a legal determination — it is an initial investment suitability experience.","modal.result.cta":"Speak with an ORBIT Advisor"
+  },
+  tr: {
+    "nav.realEstate":"Gayrimenkul","nav.goldenVisa":"Golden Visa","nav.whyGreece":"Neden Yunanistan","nav.about":"Hakkımızda","nav.contact":"İletişim","nav.cta":"Görüşme Ayarlayın",
+    "hero.eyebrow":"GAYRİMENKUL · İKAMET · DANIŞMANLIK","hero.title1":"YUNANİSTAN'A","hero.title2":"GİRİŞ NOKTANIZ.",
+    "hero.sub":"Uluslararası yatırımcılar için stratejik gayrimenkul yatırımı ve Golden Visa danışmanlığı.",
+    "hero.ctaPrimary":"Yatırım Fırsatlarını Keşfedin","hero.ctaSecondary":"Görüşme Ayarlayın",
+    "hero.qualifyLabel":"Hedefiniz nedir?","hero.qGoldenVisa":"Golden Visa","hero.qProperty":"Gayrimenkul Yatırımı","hero.qBoth":"İkisi de","hero.qExplore":"Seçeneklerimi Keşfet",
+    "hint.goldenvisa":"Aşağıda Golden Visa sürecini görüntülüyorsunuz.","hint.properties":"Aşağıda Yunanistan'daki seçili gayrimenkulleri görüntülüyorsunuz.","hint.both":"Size hem gayrimenkul hem ikamet süreci boyunca rehberlik edeceğiz.","hint.explore":"Aşağıdaki 2 dakikalık uygunluk değerlendirmesini deneyin.",
+    "trust.eyebrow":"ORBIT · YUNANİSTAN","trust.headline":"Yunanistan'a netlikle yatırım yapın.",
+    "trust.copy":"Doğru gayrimenkulü belirlemekten Golden Visa sürecinde yol almaya kadar, ORBIT gayrimenkul ve ikamet danışmanlığını tek bir kusursuz deneyimde bir araya getirir.",
+    "trust.ind1":"Yunanistan","trust.ind2":"Gayrimenkul","trust.ind3":"Golden Visa","trust.ind4":"Uluslararası Yatırımcılar",
+    "services.eyebrow":"NE YAPIYORUZ","services.headline":"Yunanistan'a <em>eksiksiz bir yol.</em>",
+    "services.s1.tag":"GAYRİMENKUL","services.s1.title":"Gayrimenkul Yatırımı","services.s1.desc":"Yatırım hedeflerinize göre seçilmiş, özenle derlenmiş gayrimenkul fırsatları.","services.s1.cta":"Gayrimenkulleri Keşfedin",
+    "services.s2.tag":"İKAMET","services.s2.title":"Golden Visa","services.s2.desc":"Yunanistan Golden Visa sürecinde uçtan uca destek.","services.s2.cta":"Golden Visa'yı Keşfedin",
+    "services.s3.tag":"DANIŞMANLIK","services.s3.title":"Yatırım Danışmanlığı","services.s3.desc":"Yatırım yolculuğunuz boyunca stratejik rehberlik.","services.s3.cta":"Bir Danışmanla Görüşün",
+    "properties.eyebrow":"YATIRIM KEŞİF ARACI","properties.headline":"Yunanistan'da <em>seçili gayrimenkuller.</em>","properties.filterLabel":"Sizin için en önemlisi ne?",
+    "properties.fAll":"Tümü","properties.fGoldenVisa":"Golden Visa Uygunluğu","properties.fLifestyle":"Yaşam Tarzı","properties.fCapital":"Sermaye Koruması","properties.fRental":"Kira Potansiyeli",
+    "properties.example":"Örnek Görsel","properties.exploreProperty":"Gayrimenkulü İnceleyin",
+    "properties.tagGoldenVisa":"Golden Visa","properties.tagCapital":"Sermaye Koruması","properties.tagLifestyle":"Yaşam Tarzı","properties.tagRental":"Kira Potansiyeli",
+    "properties.p1.title":"Modern Konut","properties.p2.title":"Sahil Villası","properties.p3.title":"Yenilenmiş Daire","properties.p4.title":"Modern Şehir Evi","properties.p5.title":"Tasarım Çatı Katı","properties.p6.title":"Şehir Merkezi Yatırım Dairesi",
+    "properties.disclaimer":"Görseller yalnızca örnek amaçlıdır. Gerçek ilanlar, görüşme sonrasında ORBIT'in ortak ağı tarafından sunulur.",
+    "journey.eyebrow":"GOLDEN VISA","journey.headline":"Yatırımınıza göre <em>yapılandırılmış ikamet.</em>",
+    "journey.s1.title":"Danışmanlık Görüşmesi","journey.s1.desc":"Hedeflerinizi ve uygunluğunuzu birlikte değerlendiriyoruz.",
+    "journey.s2.title":"Gayrimenkul Seçimi","journey.s2.desc":"Uygun yatırım fırsatlarını belirliyoruz.",
+    "journey.s3.title":"Durum Tespiti (Due Diligence)","journey.s3.desc":"Gayrimenkul ve yatırım yapısını inceliyoruz.",
+    "journey.s4.title":"Başvuru","journey.s4.desc":"İkamet başvuru sürecini koordine ediyoruz.",
+    "journey.s5.title":"İkamet","journey.s5.desc":"Süreci tamamlayıp Yunanistan'la bağınızı kuruyoruz.",
+    "journey.cta":"Uygunluğunuzu Görüşün",
+    "why.eyebrow":"NEDEN YUNANİSTAN","why.headline1":"Sadece bir destinasyon değil.","why.headline2":"Stratejik bir Avrupa üssü.",
+    "why.p1.title":"Avrupa'ya Erişim","why.p1.desc":"Yunanistan, Avrupa içinde stratejik bir konum sunar.",
+    "why.p2.title":"Gayrimenkul","why.p2.desc":"Çeşitlenen ve gelişen bir gayrimenkul piyasası.",
+    "why.p3.title":"Yaşam Tarzı","why.p3.desc":"Büyük şehir merkezleriyle bütünleşen Akdeniz yaşamı.",
+    "why.p4.title":"Uzun Vadeli Değer","why.p4.desc":"Mülk sahipliğini ikamet planlamasıyla birleştirme fırsatı.",
+    "areas.eyebrow":"NEREYE YATIRIM YAPILIR","areas.headline":"Yunanistan'ı <em>bölge bölge keşfedin.</em>","areas.lifestyle":"Yaşam Tarzı","areas.character":"Gayrimenkul Karakteri","areas.profile":"Yatırım Profili",
+    "areas.a1.name":"Merkezi Atina","areas.a1.lifestyle":"Kentsel, kültürel, yürünebilir — müzeler, restoranlar ve iş hayatı tek merkezde.","areas.a1.character":"Yerleşik mahallelerde neoklasik binalar ve yenilenmiş daireler.","areas.a1.profile":"Profesyonellerden gelen güçlü kira talebi ve uzun vadeli şehir varlığı.",
+    "areas.a2.name":"Glyfada","areas.a2.lifestyle":"Marinaları, butikleri ve restoranlarıyla üst düzey bir sahil semti.","areas.a2.character":"Havaalanına kolay erişimi olan modern konutlar ve villalar.","areas.a2.profile":"Yaşam tarzı ve Golden Visa uygunluğu arayan uluslararası alıcılar arasında popüler.",
+    "areas.a3.name":"Atina Rivierası","areas.a3.lifestyle":"Atina'nın güneyine uzanan sahil şeridi — plaj kulüpleri, marinalar ve tatil köyleri.","areas.a3.character":"Deniz kıyısında premium villalar ve yeni yapılmış konutlar.","areas.a3.profile":"Büyük ölçekli sahil dönüşümü içinde uzun vadeli değer artışına konumlanmış.",
+    "areas.a4.name":"Pire","areas.a4.lifestyle":"Yunanistan'ın ana liman şehri; giderek daha yerleşimsel ve merkezi Atina'ya bağlı.","areas.a4.character":"Erişilebilir fiyat noktalarında modern daireler ve şehir evleri.","areas.a4.profile":"Güçlü kira potansiyeline ve kentsel yenilenme ivmesine sahip gelişen bir bölge.",
+    "process.eyebrow":"YOLCULUK","process.headline":"Baştan sona <em>net bir yol.</em>","process.p1":"Keşfet","process.p2":"Seç","process.p3":"Yatırım Yap","process.p4":"Başvur","process.p5":"Yerleş",
+    "about.eyebrow":"ORBIT HAKKINDA","about.headline":"Yunanistan'a girmenin <em>daha bilinçli bir yolu.</em>",
+    "about.copy":"ORBIT, uluslararası yatırımcılar ile Yunan yatırım ekosistemi arasında güvenilir giriş noktasıdır — gayrimenkul, yatırım stratejisi, ikamet danışmanlığı ve yerel bilgiyi tek bir bütünlüklü yolculukta birleştirir.",
+    "about.l1":"Gayrimenkul","about.l2":"Yatırım stratejisi","about.l3":"İkamet danışmanlığı","about.l4":"Yerel bilgi",
+    "about.partnerNote":"ORBIT, Yunanistan'da seçilmiş gayrimenkul ve göçmenlik uzmanlarıyla çalışır. Güvenilir yerel ortaklarımızla birlikte sunulur.",
+    "elig.eyebrow":"UYGUNLUK","elig.headline":"Yunanistan sizin için doğru yatırım rotası olabilir mi?",
+    "elig.copy":"Birkaç kısa soruyu yanıtlayın, Yunanistan'ın yatırım ve ikamet hedeflerinize ne kadar uyduğuna dair ilk bir değerlendirme alın.",
+    "elig.disclaimer":"Bu bir hukuki tespit değildir. İlk bir yatırım uygunluk değerlendirmesidir.","elig.cta":"Seçeneklerimi Keşfet","elig.micro":"2 dakika · Gizli · Taahhüt yok",
+    "faq.eyebrow":"SORULAR","faq.headline":"Sıkça <em>sorulanlar.</em>",
+    "faq.q1.q":"Yunanistan Golden Visa programı nedir?","faq.q1.a":"Yunanistan'ın yatırım yoluyla ikamet programı, uygun yatırımcıların onaylı bir gayrimenkul veya sermaye yatırımı yoluyla Yunan ikametini almasına olanak tanır. Güncel eşikler ve gereklilikler, en güncel resmi rehberliğe dayanarak bir ORBIT danışmanı tarafından sizinle doğrudan teyit edilir.",
+    "faq.q2.q":"ORBIT yerel ortaklarla nasıl çalışır?","faq.q2.a":"ORBIT, Yunanistan'da seçilmiş gayrimenkul, hukuk ve göçmenlik uzmanlarıyla koordineli çalışan, ortak-tarafsız bir danışmanlık katmanı olarak faaliyet gösterir; böylece baştan sona tutarlı tek bir yolculuk yaşarsınız.",
+    "faq.q3.q":"Süreç genellikle ne kadar sürer?","faq.q3.a":"Süreler, yatırımcının koşullarına ve gayrimenkul seçimine göre değişir. ORBIT danışmanınız, görüşme sırasında güncel işlem koşullarına dayanan gerçekçi bir zaman çizelgesi sunacaktır.",
+    "faq.q4.q":"Gayrimenkul tek yatırım rotası mı?","faq.q4.a":"Gayrimenkul en yaygın rotadır, ancak alternatif uygun yatırım seçenekleri de bulunabilir. ORBIT, hangi yolun hedeflerinizle uyumlu olduğunu anlamanıza yardımcı olur.",
+    "finalCta.headline":"Yunanistan'daki yerinizi bulmaya hazır mısınız?","finalCta.sub":"ORBIT ekibiyle özel bir görüşmeyle başlayın.","finalCta.ctaPrimary":"Görüşme Ayarlayın","finalCta.ctaSecondary":"Gayrimenkulleri Keşfedin",
+    "contact.eyebrow":"BİZE ULAŞIN","contact.headline":"Bir <em>görüşme talep edin.</em>","contact.copy":"Birkaç bilgi paylaşın, bir ORBIT danışmanı Yunanistan'daki hedeflerinizi konuşmak üzere sizinle iletişime geçsin.",
+    "contact.address":"Atina, Yunanistan","contact.fullName":"Ad Soyad","contact.email":"E-posta","contact.phone":"Telefon","contact.country":"İkamet Ülkesi","contact.interest":"Yatırım İlgi Alanı","contact.message":"Mesaj",
+    "contact.optGoldenVisa":"Golden Visa","contact.optProperty":"Gayrimenkul Yatırımı","contact.optBoth":"İkisi de","contact.optGeneral":"Genel Danışmanlık",
+    "contact.submit":"Görüşme Talep Edin","contact.note":"Bu form bir tasarım gösterimidir ve şu anda veri göndermemektedir.","contact.success":"Teşekkürler — bir ORBIT danışmanı kısa süre içinde sizinle iletişime geçecek.",
+    "footer.desc":"Gayrimenkul · Yatırım · İkamet","footer.navHeading":"Gezinme","footer.legalHeading":"Yasal","footer.contactHeading":"İletişim",
+    "footer.privacy":"Gizlilik Politikası","footer.terms":"Kullanım Koşulları","footer.cookie":"Çerez Politikası","footer.rights":"Tüm hakları saklıdır.","footer.tagline":"Butik bir yatırım göçü ve gayrimenkul danışmanlığı.",
+    "modal.back":"Geri",
+    "modal.q1.eyebrow":"SORU 01","modal.q1.q":"Sizi Yunanistan'a getiren nedir?","modal.q1.o1":"Golden Visa","modal.q1.o2":"Gayrimenkul Yatırımı","modal.q1.o3":"İkisi de","modal.q1.o4":"Araştırıyorum",
+    "modal.q2.eyebrow":"SORU 02","modal.q2.q":"Tahmini yatırım aralığınız nedir?","modal.q2.o1":"250.000 €'nun altı","modal.q2.o2":"250.000 € – 500.000 €","modal.q2.o3":"500.000 € – 1.000.000 €","modal.q2.o4":"1.000.000 €+",
+    "modal.q3.eyebrow":"SORU 03","modal.q3.q":"Yatırımı ne zaman düşünüyorsunuz?","modal.q3.o1":"3 ay içinde","modal.q3.o2":"3–6 ay","modal.q3.o3":"6–12 ay","modal.q3.o4":"Şimdilik araştırıyorum",
+    "modal.q4.eyebrow":"SORU 04","modal.q4.q":"Sizin için en önemlisi ne?","modal.q4.o1":"İkamet","modal.q4.o2":"Sermaye Koruması","modal.q4.o3":"Kira Potansiyeli","modal.q4.o4":"Yaşam Tarzı","modal.q4.o5":"Kombinasyon",
+    "modal.result.eyebrow":"SONUCUNUZ","modal.result.title":"Mevcut hedeflerinize göre Yunanistan uygun bir rota olabilir.","modal.result.body":"Yanıtlarınıza göre ORBIT, zaman çizelgenize ve hedeflerinize uygun gayrimenkul ve Golden Visa seçeneklerini keşfetmenize yardımcı olabilir.","modal.result.disclaimer":"Bu bir hukuki tespit değildir — ilk bir yatırım uygunluk değerlendirmesidir.","modal.result.cta":"Bir ORBIT Danışmanıyla Görüşün"
+  }
+};
+
+let currentLang = localStorage.getItem('orbit-lang') || 'en';
+
+function applyLang(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dataset.lang = lang;
+  localStorage.setItem('orbit-lang', lang);
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    const val = translations[lang][key];
+    if(val !== undefined) el.innerHTML = val;
+  });
+  document.querySelectorAll('[data-lang-btn]').forEach(el=>{
+    el.classList.toggle('active', el.getAttribute('data-lang-btn') === lang);
+  });
+}
+
+document.querySelectorAll('#langToggle, #langToggleMobile').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    applyLang(currentLang === 'en' ? 'tr' : 'en');
+  });
+});
+
+applyLang(currentLang);
+
+/* ============ HEADER SCROLL ============ */
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', ()=>{
+  header.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive:true });
+
+/* ============ MOBILE NAV ============ */
+const mobileNav = document.getElementById('mobileNav');
+document.getElementById('menuBtn').addEventListener('click', ()=> mobileNav.classList.add('open'));
+document.getElementById('closeMenuBtn').addEventListener('click', ()=> mobileNav.classList.remove('open'));
+document.querySelectorAll('.mob-link, .mobile-nav .btn').forEach(a=> a.addEventListener('click', ()=> mobileNav.classList.remove('open')));
+
+/* ============ SCROLL REVEAL ============ */
+const revealEls = document.querySelectorAll('.reveal, .reveal-scale');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach((entry, i)=>{
+    if(entry.isIntersecting){
+      setTimeout(()=> entry.target.classList.add('is-visible'), (i % 4) * 90);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+revealEls.forEach(el=> io.observe(el));
+
+/* ============ HERO QUALIFY TEASER ============ */
+const qualifyOptions = document.querySelectorAll('.qualify-opt');
+const qualifyHint = document.getElementById('qualifyHint');
+qualifyOptions.forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    qualifyOptions.forEach(b=> b.classList.remove('active'));
+    btn.classList.add('active');
+    const target = btn.getAttribute('data-target');
+    const hintKey = 'hint.' + (target === 'goldenvisa' ? 'goldenvisa' : target === 'properties' ? 'properties' : target === 'both' ? 'both' : 'explore');
+    qualifyHint.textContent = translations[currentLang][hintKey] || '';
+    qualifyHint.classList.add('show');
+    setTimeout(()=>{
+      if(target === 'explore'){ openModal(); }
+      else { document.getElementById(target === 'both' ? 'goldenvisa' : target).scrollIntoView({behavior:'smooth', block:'start'}); }
+    }, 700);
+  });
+});
+
+/* ============ PROPERTY FILTERS ============ */
+const filterChips = document.querySelectorAll('.filter-chip');
+const propCards = document.querySelectorAll('.prop-card');
+filterChips.forEach(chip=>{
+  chip.addEventListener('click', ()=>{
+    filterChips.forEach(c=> c.classList.remove('active'));
+    chip.classList.add('active');
+    const f = chip.getAttribute('data-filter');
+    propCards.forEach(card=>{
+      const tags = card.getAttribute('data-tags');
+      const show = f === 'all' || tags.includes(f);
+      card.style.display = show ? '' : 'none';
+    });
+  });
+});
+
+/* ============ JOURNEY STEPS ============ */
+const jSteps = document.querySelectorAll('.j-step');
+jSteps.forEach(step=>{
+  step.addEventListener('click', ()=>{
+    jSteps.forEach(s=> s.classList.remove('active'));
+    step.classList.add('active');
+  });
+});
+
+/* ============ AREAS EXPLORER ============ */
+const areaData = [
+  { img:"https://images.unsplash.com/photo-1555993539-1732b0258235?w=900&q=80&auto=format&fit=crop" },
+  { img:"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80&auto=format&fit=crop" },
+  { img:"https://images.unsplash.com/photo-1560184897-ae75f418493e?w=900&q=80&auto=format&fit=crop" },
+  { img:"https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=80&auto=format&fit=crop" }
+];
+const areaKeys = ['a1','a2','a3','a4'];
+const areaBtns = document.querySelectorAll('.area-btn');
+areaBtns.forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    areaBtns.forEach(b=> b.classList.remove('active'));
+    btn.classList.add('active');
+    const idx = parseInt(btn.getAttribute('data-area'), 10);
+    const key = areaKeys[idx];
+    document.getElementById('areaImg').src = areaData[idx].img;
+    document.getElementById('areaName').textContent = translations[currentLang]['areas.'+key+'.name'];
+    document.getElementById('areaName').setAttribute('data-i18n','areas.'+key+'.name');
+    document.getElementById('areaLifestyle').textContent = translations[currentLang]['areas.'+key+'.lifestyle'];
+    document.getElementById('areaLifestyle').setAttribute('data-i18n','areas.'+key+'.lifestyle');
+    document.getElementById('areaCharacter').textContent = translations[currentLang]['areas.'+key+'.character'];
+    document.getElementById('areaCharacter').setAttribute('data-i18n','areas.'+key+'.character');
+    document.getElementById('areaProfile').textContent = translations[currentLang]['areas.'+key+'.profile'];
+    document.getElementById('areaProfile').setAttribute('data-i18n','areas.'+key+'.profile');
+  });
+});
+
+/* ============ FAQ ACCORDION ============ */
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click', ()=>{
+    const item = q.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=> i.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ============ QUALIFY MODAL ============ */
+const modalOverlay = document.getElementById('qualifyModal');
+const modalSteps = document.querySelectorAll('.modal-step');
+const progressBars = document.querySelectorAll('.modal-progress i');
+let modalIndex = 0;
+const answers = {};
+
+function openModal(){
+  modalOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  goToStep(0);
+}
+function closeModal(){
+  modalOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+function goToStep(i){
+  modalIndex = i;
+  modalSteps.forEach(s=> s.classList.toggle('active', parseInt(s.getAttribute('data-mstep'),10) === i));
+  progressBars.forEach((bar, idx)=>{
+    bar.classList.toggle('done', idx < i);
+    bar.classList.toggle('current', idx === i);
+  });
+}
+
+document.getElementById('openQualifyModal').addEventListener('click', openModal);
+document.getElementById('closeQualifyModal').addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (e)=>{ if(e.target === modalOverlay) closeModal(); });
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modalOverlay.classList.contains('open')) closeModal(); });
+
+document.querySelectorAll('.modal-option').forEach(opt=>{
+  opt.addEventListener('click', ()=>{
+    const group = opt.closest('.modal-options');
+    group.querySelectorAll('.modal-option').forEach(o=> o.classList.remove('selected'));
+    opt.classList.add('selected');
+    const q = group.getAttribute('data-question');
+    answers[q] = opt.getAttribute('data-value');
+    setTimeout(()=>{
+      if(modalIndex < 3){ goToStep(modalIndex + 1); }
+      else { goToStep(4); }
+    }, 380);
+  });
+});
+
+document.querySelectorAll('[data-back]').forEach(btn=>{
+  btn.addEventListener('click', ()=> goToStep(Math.max(0, modalIndex - 1)));
+});
+
+/* ============ CONTACT FORM (demo, no backend) ============ */
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('formSuccess').classList.add('show');
+  this.reset();
+});
+
+/* ============ MISC ============ */
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
