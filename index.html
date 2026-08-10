@@ -544,6 +544,13 @@
   .modal-result p{ color: var(--text-lo); }
   .modal-result p.disclaimer{ font-size:12px; color: var(--text-faint); font-style:italic; margin-top: var(--space-md); }
   .modal-result .btn{ margin-top: var(--space-lg); width:100%; justify-content:center; }
+  .modal-summary{ margin-top: var(--space-lg); border:1px solid var(--border-soft); border-radius: var(--radius-m); overflow:hidden; }
+  .modal-summary-row{ display:flex; justify-content:space-between; gap: var(--space-md); padding:12px 16px; border-top:1px solid var(--border-soft); }
+  .modal-summary-row:first-child{ border-top:none; }
+  .modal-summary-row span{ font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color: var(--text-faint); }
+  .modal-summary-row strong{ font-size:13.5px; font-weight:500; color: var(--ivory); text-align:right; }
+  .modal-retake{ display:block; margin:14px auto 0; background:none; border:none; font-size:12px; color: var(--text-faint); text-decoration:underline; text-underline-offset:3px; }
+  .modal-retake:hover{ color: var(--champagne); }
 
   /* ===== RESPONSIVE / MOBILE NAV TOGGLE ===== */
   @media (max-width: 900px){
@@ -1220,9 +1227,9 @@
     </div>
 
     <div class="modal-step active" data-mstep="0">
-      <div class="modal-eyebrow" data-i18n="modal.q1.eyebrow">QUESTION 01</div>
+      <div class="modal-eyebrow" id="modalEyebrow0"></div>
       <h3 data-i18n="modal.q1.q">What brings you to Greece?</h3>
-      <div class="modal-options" data-question="q1">
+      <div class="modal-options" data-question="motivation">
         <button class="modal-option" data-value="goldenvisa"><span data-i18n="modal.q1.o1">Golden Visa</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
         <button class="modal-option" data-value="property"><span data-i18n="modal.q1.o2">Property Investment</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
         <button class="modal-option" data-value="both"><span data-i18n="modal.q1.o3">Both</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
@@ -1231,21 +1238,16 @@
     </div>
 
     <div class="modal-step" data-mstep="1">
-      <div class="modal-eyebrow" data-i18n="modal.q2.eyebrow">QUESTION 02</div>
-      <h3 data-i18n="modal.q2.q">What is your estimated investment range?</h3>
-      <div class="modal-options" data-question="q2">
-        <button class="modal-option" data-value="r1"><span data-i18n="modal.q2.o1">Under €250,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="r2"><span data-i18n="modal.q2.o2">€250,000 – €500,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="r3"><span data-i18n="modal.q2.o3">€500,000 – €1,000,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="r4"><span data-i18n="modal.q2.o4">€1,000,000+</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-      </div>
+      <div class="modal-eyebrow" id="modalEyebrow1"></div>
+      <h3 id="modalDynamicQuestion">—</h3>
+      <div class="modal-options" data-question="dynamic" id="modalDynamicOptions"></div>
       <button class="modal-back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg><span data-i18n="modal.back">Back</span></button>
     </div>
 
     <div class="modal-step" data-mstep="2">
-      <div class="modal-eyebrow" data-i18n="modal.q3.eyebrow">QUESTION 03</div>
+      <div class="modal-eyebrow" id="modalEyebrow2"></div>
       <h3 data-i18n="modal.q3.q">When are you considering investing?</h3>
-      <div class="modal-options" data-question="q3">
+      <div class="modal-options" data-question="timing">
         <button class="modal-option" data-value="t1"><span data-i18n="modal.q3.o1">Within 3 months</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
         <button class="modal-option" data-value="t2"><span data-i18n="modal.q3.o2">3–6 months</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
         <button class="modal-option" data-value="t3"><span data-i18n="modal.q3.o3">6–12 months</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
@@ -1255,14 +1257,13 @@
     </div>
 
     <div class="modal-step" data-mstep="3">
-      <div class="modal-eyebrow" data-i18n="modal.q4.eyebrow">QUESTION 04</div>
-      <h3 data-i18n="modal.q4.q">What matters most to you?</h3>
-      <div class="modal-options" data-question="q4">
-        <button class="modal-option" data-value="residency"><span data-i18n="modal.q4.o1">Residency</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="capital"><span data-i18n="modal.q4.o2">Capital Preservation</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="rental"><span data-i18n="modal.q4.o3">Rental Potential</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="lifestyle"><span data-i18n="modal.q4.o4">Lifestyle</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
-        <button class="modal-option" data-value="combo"><span data-i18n="modal.q4.o5">Combination</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+      <div class="modal-eyebrow" id="modalEyebrow3"></div>
+      <h3 data-i18n="modal.q2.q">What is your estimated investment range?</h3>
+      <div class="modal-options" data-question="range">
+        <button class="modal-option" data-value="r1"><span data-i18n="modal.q2.o1">Under €250,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="r2"><span data-i18n="modal.q2.o2">€250,000 – €500,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="r3"><span data-i18n="modal.q2.o3">€500,000 – €1,000,000</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+        <button class="modal-option" data-value="r4"><span data-i18n="modal.q2.o4">€1,000,000+</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>
       </div>
       <button class="modal-back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="11 18 5 12 11 6"/></svg><span data-i18n="modal.back">Back</span></button>
     </div>
@@ -1275,10 +1276,12 @@
         <div class="modal-eyebrow" data-i18n="modal.result.eyebrow">YOUR RESULT</div>
         <h3 data-i18n="modal.result.title">Greece may be a suitable route based on your current goals.</h3>
         <p data-i18n="modal.result.body">Based on your answers, ORBIT can help you explore relevant property and Golden Visa options aligned with your timeline and objectives.</p>
+        <div class="modal-summary" id="modalSummary"></div>
         <p class="disclaimer" data-i18n="modal.result.disclaimer">This is not a legal determination — it is an initial investment suitability experience.</p>
         <a href="#contact" class="btn btn-primary" id="modalResultCta">
           <span data-i18n="modal.result.cta">Speak with an ORBIT Advisor</span>
         </a>
+        <button class="modal-retake" id="modalRetake" data-i18n="modal.retake" hidden>Retake assessment</button>
       </div>
     </div>
   </div>
@@ -1348,7 +1351,13 @@ const translations = {
     "modal.q1.eyebrow":"QUESTION 01","modal.q1.q":"What brings you to Greece?","modal.q1.o1":"Golden Visa","modal.q1.o2":"Property Investment","modal.q1.o3":"Both","modal.q1.o4":"Exploring",
     "modal.q2.eyebrow":"QUESTION 02","modal.q2.q":"What is your estimated investment range?","modal.q2.o1":"Under €250,000","modal.q2.o2":"€250,000 – €500,000","modal.q2.o3":"€500,000 – €1,000,000","modal.q2.o4":"€1,000,000+",
     "modal.q3.eyebrow":"QUESTION 03","modal.q3.q":"When are you considering investing?","modal.q3.o1":"Within 3 months","modal.q3.o2":"3–6 months","modal.q3.o3":"6–12 months","modal.q3.o4":"Exploring for now",
-    "modal.q4.eyebrow":"QUESTION 04","modal.q4.q":"What matters most to you?","modal.q4.o1":"Residency","modal.q4.o2":"Capital Preservation","modal.q4.o3":"Rental Potential","modal.q4.o4":"Lifestyle","modal.q4.o5":"Combination",
+    "modal.questionWord":"QUESTION",
+    "modal.branch.goldenvisa.q":"How familiar are you with Greece's Golden Visa?","modal.branch.goldenvisa.o1":"New to it","modal.branch.goldenvisa.o2":"I've done some research","modal.branch.goldenvisa.o3":"I understand the program well",
+    "modal.branch.property.q":"What matters most in your property investment?","modal.branch.property.o1":"Capital Preservation","modal.branch.property.o2":"Rental Potential","modal.branch.property.o3":"Lifestyle","modal.branch.property.o4":"Golden Visa Suitability",
+    "modal.branch.both.q":"How do property and residency connect for you?","modal.branch.both.o1":"Property first, residency as a bonus","modal.branch.both.o2":"Residency is the goal, property is the vehicle","modal.branch.both.o3":"Equally important","modal.branch.both.o4":"Not sure yet",
+    "modal.branch.exploring.q":"What's motivating you to look into Greece?","modal.branch.exploring.o1":"Investment diversification","modal.branch.exploring.o2":"Family's future","modal.branch.exploring.o3":"A lifestyle change","modal.branch.exploring.o4":"Just researching for now",
+    "modal.sum.motivation":"What brings you","modal.sum.dynamic":"Priority","modal.sum.timing":"Timing","modal.sum.range":"Investment range",
+    "modal.retake":"Not you? Retake the assessment",
     "modal.result.eyebrow":"YOUR RESULT","modal.result.title":"Greece may be a suitable route based on your current goals.","modal.result.body":"Based on your answers, ORBIT can help you explore relevant property and Golden Visa options aligned with your timeline and objectives.","modal.result.disclaimer":"This is not a legal determination — it is an initial investment suitability experience.","modal.result.cta":"Speak with an ORBIT Advisor"
   },
   tr: {
@@ -1412,7 +1421,13 @@ const translations = {
     "modal.q1.eyebrow":"SORU 01","modal.q1.q":"Sizi Yunanistan'a getiren nedir?","modal.q1.o1":"Golden Visa","modal.q1.o2":"Gayrimenkul Yatırımı","modal.q1.o3":"İkisi de","modal.q1.o4":"Araştırıyorum",
     "modal.q2.eyebrow":"SORU 02","modal.q2.q":"Tahmini yatırım aralığınız nedir?","modal.q2.o1":"250.000 €'nun altı","modal.q2.o2":"250.000 € – 500.000 €","modal.q2.o3":"500.000 € – 1.000.000 €","modal.q2.o4":"1.000.000 €+",
     "modal.q3.eyebrow":"SORU 03","modal.q3.q":"Yatırımı ne zaman düşünüyorsunuz?","modal.q3.o1":"3 ay içinde","modal.q3.o2":"3–6 ay","modal.q3.o3":"6–12 ay","modal.q3.o4":"Şimdilik araştırıyorum",
-    "modal.q4.eyebrow":"SORU 04","modal.q4.q":"Sizin için en önemlisi ne?","modal.q4.o1":"İkamet","modal.q4.o2":"Sermaye Koruması","modal.q4.o3":"Kira Potansiyeli","modal.q4.o4":"Yaşam Tarzı","modal.q4.o5":"Kombinasyon",
+    "modal.questionWord":"SORU",
+    "modal.branch.goldenvisa.q":"Yunanistan Golden Visa'sına ne kadar aşinasınız?","modal.branch.goldenvisa.o1":"Yeni duyuyorum","modal.branch.goldenvisa.o2":"Biraz araştırma yaptım","modal.branch.goldenvisa.o3":"Programı iyi biliyorum",
+    "modal.branch.property.q":"Gayrimenkul yatırımınızda en önemlisi ne?","modal.branch.property.o1":"Sermaye Koruması","modal.branch.property.o2":"Kira Potansiyeli","modal.branch.property.o3":"Yaşam Tarzı","modal.branch.property.o4":"Golden Visa Uygunluğu",
+    "modal.branch.both.q":"Gayrimenkul ve ikamet sizin için nasıl bağlantılı?","modal.branch.both.o1":"Önce gayrimenkul, ikamet bir bonus","modal.branch.both.o2":"Hedef ikamet, gayrimenkul bir araç","modal.branch.both.o3":"İkisi de eşit derecede önemli","modal.branch.both.o4":"Henüz emin değilim",
+    "modal.branch.exploring.q":"Yunanistan'ı araştırmanızın sebebi ne?","modal.branch.exploring.o1":"Yatırım çeşitlendirmesi","modal.branch.exploring.o2":"Ailenin geleceği","modal.branch.exploring.o3":"Bir yaşam tarzı değişikliği","modal.branch.exploring.o4":"Şimdilik sadece araştırıyorum",
+    "modal.sum.motivation":"Hedefiniz","modal.sum.dynamic":"Önceliğiniz","modal.sum.timing":"Zamanlama","modal.sum.range":"Yatırım aralığı",
+    "modal.retake":"Siz değil misiniz? Değerlendirmeyi yeniden yapın",
     "modal.result.eyebrow":"SONUCUNUZ","modal.result.title":"Mevcut hedeflerinize göre Yunanistan uygun bir rota olabilir.","modal.result.body":"Yanıtlarınıza göre ORBIT, zaman çizelgenize ve hedeflerinize uygun gayrimenkul ve Golden Visa seçeneklerini keşfetmenize yardımcı olabilir.","modal.result.disclaimer":"Bu bir hukuki tespit değildir — ilk bir yatırım uygunluk değerlendirmesidir.","modal.result.cta":"Bir ORBIT Danışmanıyla Görüşün"
   }
 };
@@ -1466,6 +1481,34 @@ const io = new IntersectionObserver((entries)=>{
 }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 revealEls.forEach(el=> io.observe(el));
 
+/* ============ INVESTOR PROFILE ============ */
+/* Client-side only for now — no backend exists yet. Structured so a future
+   Hermes/CRM integration can read this shape directly instead of a redesign. */
+const PROFILE_KEY = 'orbit_investor_profile';
+
+function loadProfile(){
+  try { return JSON.parse(localStorage.getItem(PROFILE_KEY)); } catch(e){ return null; }
+}
+function saveProfile(p){
+  try { localStorage.setItem(PROFILE_KEY, JSON.stringify(p)); } catch(e){}
+}
+
+let investorProfile = loadProfile();
+if(!investorProfile){
+  const params = new URLSearchParams(location.search);
+  investorProfile = {
+    observed: {
+      referrer: document.referrer || null,
+      utm: { source: params.get('utm_source'), medium: params.get('utm_medium'), campaign: params.get('utm_campaign') },
+      landingPath: location.pathname,
+      firstVisit: new Date().toISOString()
+    },
+    declared: {},
+    meta: { completedAt: null }
+  };
+  saveProfile(investorProfile);
+}
+
 /* ============ HERO QUALIFY TEASER ============ */
 const qualifyOptions = document.querySelectorAll('.qualify-opt');
 const qualifyHint = document.getElementById('qualifyHint');
@@ -1477,6 +1520,10 @@ qualifyOptions.forEach(btn=>{
     const hintKey = 'hint.' + (target === 'goldenvisa' ? 'goldenvisa' : target === 'properties' ? 'properties' : target === 'both' ? 'both' : 'explore');
     qualifyHint.textContent = translations[currentLang][hintKey] || '';
     qualifyHint.classList.add('show');
+    if(target !== 'explore'){
+      investorProfile.declared.heroIntent = target === 'properties' ? 'property' : target;
+      saveProfile(investorProfile);
+    }
     setTimeout(()=>{
       if(target === 'explore'){ openModal(); }
       else { document.getElementById(target === 'both' ? 'goldenvisa' : target).scrollIntoView({behavior:'smooth', block:'start'}); }
@@ -1546,18 +1593,108 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   });
 });
 
-/* ============ QUALIFY MODAL ============ */
+/* ============ QUALIFY MODAL (adaptive) ============ */
+/* Step 0 (motivation) is fixed for everyone. Step 1 branches based on the
+   step-0 answer instead of asking every visitor the same four questions —
+   see ORBIT × HERMES §17 "Adaptive Questioning" / §41. Kept config-driven
+   (not nested if/else) so a real Hermes backend can later own this map. */
 const modalOverlay = document.getElementById('qualifyModal');
 const modalSteps = document.querySelectorAll('.modal-step');
 const progressBars = document.querySelectorAll('.modal-progress i');
 let modalIndex = 0;
 const answers = {};
+const answerLabels = {};
+
+const BRANCH_CONFIG = {
+  goldenvisa: { qKey:'modal.branch.goldenvisa.q', options:[
+    {value:'new', labelKey:'modal.branch.goldenvisa.o1'},
+    {value:'researched', labelKey:'modal.branch.goldenvisa.o2'},
+    {value:'expert', labelKey:'modal.branch.goldenvisa.o3'}
+  ]},
+  property: { qKey:'modal.branch.property.q', options:[
+    {value:'capital', labelKey:'modal.branch.property.o1'},
+    {value:'rental', labelKey:'modal.branch.property.o2'},
+    {value:'lifestyle', labelKey:'modal.branch.property.o3'},
+    {value:'goldenvisa_fit', labelKey:'modal.branch.property.o4'}
+  ]},
+  both: { qKey:'modal.branch.both.q', options:[
+    {value:'property_first', labelKey:'modal.branch.both.o1'},
+    {value:'residency_first', labelKey:'modal.branch.both.o2'},
+    {value:'equal', labelKey:'modal.branch.both.o3'},
+    {value:'unsure', labelKey:'modal.branch.both.o4'}
+  ]},
+  exploring: { qKey:'modal.branch.exploring.q', options:[
+    {value:'diversification', labelKey:'modal.branch.exploring.o1'},
+    {value:'family', labelKey:'modal.branch.exploring.o2'},
+    {value:'lifestyle_change', labelKey:'modal.branch.exploring.o3'},
+    {value:'researching', labelKey:'modal.branch.exploring.o4'}
+  ]}
+};
+
+function renderDynamicStep(motivation){
+  const cfg = BRANCH_CONFIG[motivation] || BRANCH_CONFIG.exploring;
+  document.getElementById('modalDynamicQuestion').textContent = translations[currentLang][cfg.qKey];
+  document.getElementById('modalDynamicOptions').innerHTML = cfg.options.map(o =>
+    `<button class="modal-option" data-value="${o.value}"><span>${translations[currentLang][o.labelKey]}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>`
+  ).join('');
+}
+
+function setEyebrows(){
+  const word = translations[currentLang]['modal.questionWord'];
+  ['modalEyebrow0','modalEyebrow1','modalEyebrow2','modalEyebrow3'].forEach((id, i)=>{
+    document.getElementById(id).textContent = word + ' 0' + (i + 1);
+  });
+}
+
+function renderResult(){
+  const rows = [
+    ['modal.sum.motivation', answerLabels.motivation],
+    ['modal.sum.dynamic', answerLabels.dynamic],
+    ['modal.sum.timing', answerLabels.timing],
+    ['modal.sum.range', answerLabels.range]
+  ].filter(r => r[1]);
+  document.getElementById('modalSummary').innerHTML = rows.map(r =>
+    `<div class="modal-summary-row"><span>${translations[currentLang][r[0]]}</span><strong>${r[1]}</strong></div>`
+  ).join('');
+}
 
 function openModal(){
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+  setEyebrows();
+
+  // Already completed once (this browser): don't re-interrogate, show the result again.
+  if(investorProfile.meta.completedAt && investorProfile.declared.answers){
+    Object.assign(answers, investorProfile.declared.answers);
+    Object.assign(answerLabels, investorProfile.declared.answerLabels);
+    renderResult();
+    document.getElementById('modalRetake').hidden = false;
+    goToStep(4);
+    return;
+  }
+  document.getElementById('modalRetake').hidden = true;
+
+  // Already told us via the hero teaser — skip straight past question one.
+  if(investorProfile.declared.heroIntent && !answers.motivation){
+    answers.motivation = investorProfile.declared.heroIntent;
+    const motivationLabelKeys = { goldenvisa:'modal.q1.o1', property:'modal.q1.o2', both:'modal.q1.o3', exploring:'modal.q1.o4' };
+    answerLabels.motivation = translations[currentLang][motivationLabelKeys[answers.motivation]];
+    renderDynamicStep(answers.motivation);
+    goToStep(1);
+    return;
+  }
+
+  goToStep(modalIndex || 0);
+}
+
+function resetModal(){
+  Object.keys(answers).forEach(k=> delete answers[k]);
+  Object.keys(answerLabels).forEach(k=> delete answerLabels[k]);
+  document.querySelectorAll('.modal-option.selected').forEach(o=> o.classList.remove('selected'));
+  document.getElementById('modalRetake').hidden = true;
   goToStep(0);
 }
+
 function closeModal(){
   modalOverlay.classList.remove('open');
   document.body.style.overflow = '';
@@ -1573,25 +1710,49 @@ function goToStep(i){
 
 document.getElementById('openQualifyModal').addEventListener('click', openModal);
 document.getElementById('closeQualifyModal').addEventListener('click', closeModal);
+document.getElementById('modalRetake').addEventListener('click', resetModal);
 modalOverlay.addEventListener('click', (e)=>{ if(e.target === modalOverlay) closeModal(); });
 document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modalOverlay.classList.contains('open')) closeModal(); });
 
-document.querySelectorAll('.modal-option').forEach(opt=>{
-  opt.addEventListener('click', ()=>{
-    const group = opt.closest('.modal-options');
-    group.querySelectorAll('.modal-option').forEach(o=> o.classList.remove('selected'));
-    opt.classList.add('selected');
-    const q = group.getAttribute('data-question');
-    answers[q] = opt.getAttribute('data-value');
-    setTimeout(()=>{
-      if(modalIndex < 3){ goToStep(modalIndex + 1); }
-      else { goToStep(4); }
-    }, 380);
-  });
+modalOverlay.addEventListener('click', (e)=>{
+  const opt = e.target.closest('.modal-option');
+  if(!opt) return;
+  const group = opt.closest('.modal-options');
+  group.querySelectorAll('.modal-option').forEach(o=> o.classList.remove('selected'));
+  opt.classList.add('selected');
+  const q = group.getAttribute('data-question');
+  answers[q] = opt.getAttribute('data-value');
+  answerLabels[q] = opt.querySelector('span').textContent;
+
+  setTimeout(()=>{
+    if(q === 'motivation'){
+      renderDynamicStep(answers.motivation);
+      goToStep(1);
+    } else if(modalIndex < 3){
+      goToStep(modalIndex + 1);
+    } else {
+      investorProfile.declared.motivation = answers.motivation;
+      investorProfile.declared.answers = Object.assign({}, answers);
+      investorProfile.declared.answerLabels = Object.assign({}, answerLabels);
+      investorProfile.meta.completedAt = new Date().toISOString();
+      saveProfile(investorProfile);
+      renderResult();
+      goToStep(4);
+    }
+  }, 380);
 });
 
 document.querySelectorAll('[data-back]').forEach(btn=>{
   btn.addEventListener('click', ()=> goToStep(Math.max(0, modalIndex - 1)));
+});
+
+document.getElementById('modalResultCta').addEventListener('click', ()=>{
+  const interestSelect = document.querySelector('select[name="interest"]');
+  const map = { goldenvisa: 0, property: 1, both: 2, exploring: 3 };
+  if(interestSelect && answers.motivation in map){
+    interestSelect.selectedIndex = map[answers.motivation];
+  }
+  closeModal();
 });
 
 /* ============ CONTACT FORM (demo, no backend) ============ */
